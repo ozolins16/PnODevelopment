@@ -3,7 +3,7 @@
 
 #hero-container{
     height: 100vh;
-    background-image: url(/Images/hero-img3.png);
+    background-image: url(Images/hero-img3.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -429,12 +429,12 @@
 }
 
 .person-image-linards{
-    background-image: url(/Images/Linards.jpg);
+    background-image: url(Images/Linards.jpg);
 
 }
 
 .person-image-martins{
-    background-image: url(/Images/martins.jpg);
+    background-image: url(Images/martins.jpg);
 }
 
 .person-name{
