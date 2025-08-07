@@ -521,6 +521,10 @@
         width: 90%;
     }
 
+    .pricing-div-headings{
+        font-size: 18px;
+    }
+
     #about-us-container{
         margin: 100px auto;
     }
