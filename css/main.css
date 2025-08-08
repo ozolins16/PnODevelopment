@@ -92,54 +92,13 @@
     transform: translateX(10px);
 }
 
-/* ----------------------------- CLIENTS SECTION  -----------------------------*/
 
-#clients-container {
-    text-align: center;
-    margin-bottom: 150px;
-}
-
-#clients-container h3 {
-    font-size: 25px;
-    margin-bottom: 35px;
-}
-
-#client-logo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
-    flex-wrap: wrap;
-}
-
-.client-logo {
-    width: 240px;
-    height: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-.client-logo img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-    opacity: 0.9;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.client-logo img:hover {
-    transform: scale(1.1);
-    opacity: 1;
-}
 
 /* ----------------------------- OUR SERVICES SECTION  -----------------------------*/
 
 #services-container {
     width: 90vw;
     margin: auto;
-    margin-top: 100px;
     scroll-margin-top: 110px;
     text-align: center;
 }
@@ -156,8 +115,8 @@
 
 .services-div {
     width: 450px;
-    height: 300px;
-    padding: 20px 0;
+    height: 400px;
+    padding: 0 0 20px 0;
     background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(5px);
     border-radius: 50px;
@@ -166,7 +125,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 10px;
+    gap: 20px;
     transition: all 0.3s ease;
 }
 
@@ -220,8 +179,8 @@
     width: 500px;
     height: 550px;
     padding: 30px;
-    border-top: solid #FFF 5px;
-    border-bottom: solid #FFF 5px;
+    border-top: solid #FFF 3px;
+    border-bottom: solid #FFF 3px;
     backdrop-filter: blur(15px);
 }
 
@@ -269,6 +228,53 @@
 
 .not-doing {
     color: rgba(255, 255, 255, 0.3);
+}
+
+/* ----------------------------- CLIENTS SECTION  -----------------------------*/
+
+#clients-container {
+    text-align: center;
+    padding: 30px 30px 50px 30px;
+    border-bottom: solid #FFF 2px;
+    width: 55%;
+    margin: 150px auto -100px auto;
+}
+
+#clients-container h3 {
+    font-size: 25px;
+    margin-bottom: 35px;
+}
+
+#client-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    flex-wrap: wrap;
+    
+}
+
+
+.client-logo {
+    width: 240px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.client-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    opacity: 0.9;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.client-logo img:hover {
+    transform: scale(1.1);
+    opacity: 1;
 }
 
 /* ----------------------------- ABOUT US SECTION  -----------------------------*/
