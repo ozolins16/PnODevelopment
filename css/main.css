@@ -12,6 +12,13 @@
     margin-bottom: 20px;
 }
 
+.paragraph1 {
+    width: 70%;
+    margin: auto;
+    font-size: 20px;
+    font-weight: 400;
+}
+
 
 /* ----------------------------- HERO SECTION  -----------------------------*/
 
@@ -134,13 +141,6 @@
     margin-top: 100px;
     scroll-margin-top: 110px;
     text-align: center;
-}
-
-#services-container p {
-    width: 70%;
-    margin: auto;
-    font-size: 20px;
-    font-weight: 400;
 }
 
 #services-div-container {
