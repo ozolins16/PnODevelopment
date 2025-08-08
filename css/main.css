@@ -251,7 +251,7 @@
     flex-direction: column;
     align-items: baseline;
     justify-content: space-between;
-    gap: 10px;
+    gap: 20px;
 }
 
 .pricing-div-content span {
@@ -449,6 +449,10 @@
         height: 60px;
         width: 60px;
     }   
+
+    .pricing-div-content span p{
+        font-size: 18px;
+    }
 
     #about-us-container{
         margin: 100px auto;
