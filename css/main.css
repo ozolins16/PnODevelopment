@@ -96,6 +96,10 @@
 
 #clients-container {
     text-align: center;
+    padding: 30px 30px 50px 30px;
+    border-bottom: solid #FFF 2px;
+    width: 55%;
+    margin: 150px auto -100px auto;
 }
 
 #clients-container h3 {
@@ -107,9 +111,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 60px;
+    gap: 100px;
     flex-wrap: wrap;
+    
 }
+
 
 .client-logo {
     width: 240px;
