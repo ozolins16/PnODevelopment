@@ -202,6 +202,11 @@
     text-align: center;
 }
 
+#pricing-container h1{
+    font-size: 48px;
+    font-weight: 700;
+}
+
 #pricing-container h3{
     color: #12AAFB;
     text-transform: uppercase;
@@ -273,11 +278,22 @@
     width: 90%;
     margin: 200px auto;
     scroll-margin-top: 110px;
+    text-align: center;
 }
 
 #about-us-container h3{
     color: #12AAFB;
     text-transform: uppercase;
+}
+
+#about-us-container h1{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#about-us-container h3{
+    font-size: 25px;
 }
 
 #about-us-div-container{
