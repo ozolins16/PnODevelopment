@@ -443,6 +443,14 @@
         font-size: 18px;
     }
 
+    #pricing-container h1 {
+        font-size: 40px;
+    }
+
+    #pricing-container p {
+        width: 100%;
+    }
+
     #about-us-container {
         margin: 100px auto;
     }
