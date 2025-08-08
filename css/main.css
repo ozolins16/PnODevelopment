@@ -457,6 +457,10 @@
         font-size: 18px;
     }
 
+    .pricing-div {
+        backdrop-filter: blur(10px);
+    }
+
     #pricing-container h1 {
         font-size: 40px;
     }
