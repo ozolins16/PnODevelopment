@@ -38,3 +38,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
+// URL mapping: maps .html files to clean URLs
+const urlMap = {
+  '/index.html': '/home',
+  '/contact.html': '/contact'
+};
+
+// Check if the current URL matches any .html file in the map
+const currentPath = window.location.pathname;
+if (urlMap[currentPath]) {
+  // Rewrite the URL to the clean version (e.g., /home or /contact)
+  history.replaceState(null, null, urlMap[currentPath]);
+}
