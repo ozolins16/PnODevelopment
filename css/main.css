@@ -251,7 +251,6 @@
     align-items: center;
     gap: 100px;
     flex-wrap: wrap;
-    
 }
 
 
@@ -469,6 +468,21 @@
         width: 100%;
     }
 
+    #clients-container{
+        border-bottom: none;
+        margin-bottom: auto;
+    }
+
+    #client-logo-container {
+        gap: 50px;
+    }
+
+    .client-logo {
+    width: 180px;
+    height: 90px;
+    }
+
+
     #about-us-container {
         margin: 100px auto;
     }
@@ -478,4 +492,6 @@
         align-items: center;
         gap: 0px;
     }
+
+    
 }
