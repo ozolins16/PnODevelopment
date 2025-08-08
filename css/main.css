@@ -1,18 +1,18 @@
 /* Universal Classes */
 
-.heading3{
+.heading3 {
     color: #12AAFB;
     text-transform: uppercase;
     font-size: 25px;
 }
 
-.heading1{
+.heading1 {
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
-.paragraph1{
+.paragraph1 {
     width: 70%;
     margin: auto;
     font-size: 20px;
@@ -22,7 +22,7 @@
 
 /* ----------------------------- HERO SECTION  -----------------------------*/
 
-#hero-container{
+#hero-container {
     height: 100vh;
     background-repeat: no-repeat;
     background-position: center;
@@ -33,7 +33,7 @@
     overflow: hidden;
 }
 
-#hero-text-container{
+#hero-text-container {
     width: 72%;
     margin: auto;
     margin-top: 200px;
@@ -43,28 +43,28 @@
     align-items: center;
 }
 
-#hero-text-container h3{
+#hero-text-container h3 {
     text-transform: uppercase;
-    color:#12AAFB;
+    color: #12AAFB;
     font-size: 25px;
     font-family: inter, sans-serif;
     font-weight: 800;
 }
 
-#hero-text-container h1{
+#hero-text-container h1 {
     font-size: 80px;
     padding-bottom: 20px;
     font-family: poppins, inter;
     font-weight: 800;
 }
 
-#hero-text-container p{
+#hero-text-container p {
     font-size: 25px;
     width: 47%;
     line-height: 150%;
 }
 
-#hero-cta-btn{
+#hero-cta-btn {
     transition: all 0.3s;
     background-color: #12AAFB;
     border: none;
@@ -80,12 +80,12 @@
     cursor: pointer;
 }
 
-#hero-cta-btn-arrow{
+#hero-cta-btn-arrow {
     width: 40px;
     height: 40px;
 }
 
-#hero-cta-btn:hover{
+#hero-cta-btn:hover {
     transition: all 0.3s;
     background-color: #0E0E0E;
     color: #12AAFB;
@@ -135,15 +135,15 @@
 
 /* ----------------------------- OUR SERVICES SECTION  -----------------------------*/
 
-#services-container{
+#services-container {
     width: 90vw;
     margin: auto;
     margin-top: 100px;
     scroll-margin-top: 110px;
     text-align: center;
-} 
+}
 
-#services-div-container{
+#services-div-container {
     margin-top: 100px;
     display: flex;
     flex-direction: row;
@@ -153,7 +153,7 @@
     gap: 75px;
 }
 
-.services-div{
+.services-div {
     width: 450px;
     height: 300px;
     padding: 20px 0;
@@ -172,30 +172,30 @@
 .services-div:hover {
     transform: translateY(-5px);
     box-shadow: 0 0 60px rgba(0, 0, 0, 0.75);
-  }
+}
 
-.services-div img{
+.services-div img {
     height: 80px;
     width: 80px;
 }
 
-.services-div h2{
+.services-div h2 {
     font-size: 30px;
     font-weight: 700;
 }
 
-.services-div p{
+.services-div p {
     width: 80% !important;
     font-size: 19px !important;
     font-weight: 500;
     color: #DEDEDE;
-} 
-  
+}
+
 
 /* ----------------------------- PRICING SECTION  -----------------------------*/
 
 
-#pricing-container{
+#pricing-container {
     width: 90vw;
     margin: auto;
     margin-top: 200px;
@@ -204,7 +204,7 @@
 }
 
 
-#pricing-div-container{
+#pricing-div-container {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -215,7 +215,7 @@
     margin-top: 75px;
 }
 
-.pricing-div{
+.pricing-div {
     width: 500px;
     height: max-content;
     padding: 30px;
@@ -224,20 +224,20 @@
     backdrop-filter: blur(5px);
 }
 
-.pricing-div h1{
+.pricing-div h1 {
     font-size: 40px;
     font-weight: 700;
     margin: 20px 0;
     text-align: left;
 }
 
-.pricing-div h1 span{
+.pricing-div h1 span {
     font-size: 16px;
     font-weight: 500;
     color: #B8B8B8;
 }
 
-.pricing-div-content{
+.pricing-div-content {
     display: flex;
     flex-direction: column;
     align-items: baseline;
@@ -254,37 +254,37 @@
     gap: 20px;
 }
 
-.pricing-div-content span img{
+.pricing-div-content span img {
     height: 20px;
     width: 20px;
 }
 
-.pricing-div-content span p{
+.pricing-div-content span p {
     font-size: 20px;
 }
 
 /* ----------------------------- ABOUT US SECTION  -----------------------------*/
 
-#about-us-container{
+#about-us-container {
     width: 90%;
     margin: 200px auto;
     scroll-margin-top: 110px;
     text-align: center;
 }
 
-#about-us-container h3{
+#about-us-container h3 {
     color: #12AAFB;
     text-transform: uppercase;
     font-size: 25px;
 }
 
-#about-us-container h1{
+#about-us-container h1 {
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
-#about-us-div-container{
+#about-us-div-container {
     margin: auto;
     margin-top: 50px;
     display: flex;
@@ -295,7 +295,7 @@
     gap: 300px;
 }
 
-.person-div{
+.person-div {
     width: 300px;
     height: 550px;
     display: flex;
@@ -306,7 +306,7 @@
     text-align: center;
 }
 
-.person-image{
+.person-image {
     height: 230px;
     width: 230px;
     border-radius: 100%;
@@ -315,141 +315,141 @@
     background-size: cover;
 }
 
-.person-image-linards{
+.person-image-linards {
     background-image: url(../Images/linards.jpg);
 
 }
 
-.person-image-martins{
+.person-image-martins {
     background-image: url(../Images/martins.jpg);
 }
 
-.person-name{
+.person-name {
     font-size: 32px;
 }
 
-.person-name span{
+.person-name span {
     font-size: 15px;
 }
 
-.person-div-line{
+.person-div-line {
     width: 90%;
     height: 3px;
     background-color: #12AAFB;
 }
 
-.person-text{
+.person-text {
     font-weight: 600;
 }
 
-@media (max-width: 1400px) {w
-    #hero-text-container{
+@media (max-width: 1400px) {
+    w #hero-text-container {
         margin-top: 10%;
         width: 80%;
     }
 
-    #hero-text-container h3{
+    #hero-text-container h3 {
         font-size: 20px
     }
 
-    #hero-text-container h1{
+    #hero-text-container h1 {
         font-size: 60px;
     }
 
-    #hero-text-container p{
+    #hero-text-container p {
         font-size: 25px;
         width: 70%;
     }
 
-    #about-us-div-container{
+    #about-us-div-container {
         gap: 150px;
     }
 }
 
 @media (max-width: 1024px) {
-    #hero-text-container{
+    #hero-text-container {
         width: 90%;
     }
 
-    #hero-text-container h3{
+    #hero-text-container h3 {
         font-size: 20px
     }
 
-    #hero-text-container h1{
+    #hero-text-container h1 {
         font-size: 60px;
     }
 
-    #hero-text-container p{
+    #hero-text-container p {
         font-size: 25px;
         width: 70%;
     }
 
-    #about-us-div-container{
+    #about-us-div-container {
         gap: 50px;
     }
 }
 
 @media (max-width: 768px) {
-    #hero-text-container{
+    #hero-text-container {
         width: 80%;
         margin-top: 30%;
     }
 
-    #hero-text-container h3{
+    #hero-text-container h3 {
         font-size: 20px
     }
 
-    #hero-text-container h1{
+    #hero-text-container h1 {
         font-size: 40px;
         width: 95%;
     }
 
-    #hero-text-container p{
+    #hero-text-container p {
         font-size: 20px;
         width: 95%;
     }
 
-    #services-container{
+    #services-container {
         width: 90%;
     }
 
-    #services-container h1{
+    #services-container h1 {
         font-size: 40px;
     }
 
-    #services-container p{
+    #services-container p {
         width: 100%;
     }
 
-    .services-div{
+    .services-div {
         padding: 20px;
     }
 
-    .services-div h2{
+    .services-div h2 {
         font-size: 28px;
     }
-    .services-div p{
+
+    .services-div p {
         width: 80%;
         font-size: 16px;
     }
 
-    .services-div img{
+    .services-div img {
         height: 60px;
         width: 60px;
-    }   
+    }
 
-    .pricing-div-content span p{
+    .pricing-div-content span p {
         font-size: 18px;
     }
 
-    #about-us-container{
+    #about-us-container {
         margin: 100px auto;
     }
 
-    #about-us-div-container{
+    #about-us-div-container {
         flex-direction: column;
         align-items: center;
         gap: 0px;
     }
 }
-
