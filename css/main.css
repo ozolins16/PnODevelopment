@@ -121,12 +121,26 @@
     margin: auto;
     margin-top: 100px;
     scroll-margin-top: 110px;
+    text-align: center;
 }
 
 #services-container h3{
     color: #12AAFB;
     text-transform: uppercase;
-    
+    font-size: 25px;
+}
+
+#services-container h1{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}  
+
+#services-container p{
+    width: 60%;
+    margin: auto;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 #services-div-container{
@@ -141,7 +155,8 @@
 
 .services-div{
     width: 450px;
-    height: 300px;
+    height: max-content;
+    padding: 20px 0;
     background-color: #343434;
     border-radius: 50px;
     display: flex;
@@ -184,11 +199,13 @@
     margin: auto;
     margin-top: 200px;
     scroll-margin-top: 110px;
+    text-align: center;
 }
 
 #pricing-container h3{
     color: #12AAFB;
     text-transform: uppercase;
+    font-size: 25px;
 }
 
 #pricing-div-container{
@@ -204,32 +221,24 @@
 
 .pricing-div{
     width: 500px;
-    height: 425px;
-    border-top: solid #FFF 1px;
+    height: max-content;
+    padding: 30px;
+    border-top: solid #FFF 2px;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
 }
 
-.pricing-div-white{
-    background-color: #FFF;
+.pricing-div h1{
+    font-size: 40px;
+    font-weight: 700;
+    margin: 20px 0;
+    text-align: left;
 }
 
-.pricing-div-headings{
-    width: 90%;
-    margin: auto;
-    padding: 20px 0;
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: space-between;
-    font-size: 22px;
-}
-
-.pricing-div-headings-white h2{
-    color: black;
-}
-
-.pricing-div-headings h2 span{
-    font-size: 12px;
-    color: #A8A8A8;
+.pricing-div h1 span{
+    font-size: 16px;
+    font-weight: 500;
+    color: #B8B8B8;
 }
 
 .pricing-div-content{
@@ -237,14 +246,11 @@
     flex-direction: column;
     align-items: baseline;
     justify-content: space-between;
-    gap: 30px;
+    gap: 10px;
 }
-
-
 
 .pricing-div-content span {
     width: 90%;
-    margin: auto;
     display: flex;
     justify-content: baseline;
     align-items: center;
@@ -253,135 +259,13 @@
 }
 
 .pricing-div-content span img{
-    height: 48px;
-    width: 48px;
+    height: 20px;
+    width: 20px;
 }
 
 .pricing-div-content span p{
-    font-size: 22px;
+    font-size: 20px;
 }
-
-.pricing-div-content-white span p{
-    color: black;
-}
-
-/* 
-#pricing-container{
-    width: 90%;
-    margin: auto;
-    margin-top: 200px;
-    scroll-margin-top: 110px;
-}
-#pricing-container h3{
-    color: #12AAFB;
-}
-
-
-.grid-container{
-    align-self: center;
-    width: fit-content;
-    display: grid;
-    align-items: center;
-    margin: auto;
-    margin-top: 100px;
-    gap: 20px;
-    grid-template-columns: repeat(4, 382px);
-    grid-template-rows: repeat(5, 196px);
-    grid-template-areas:
-        " gelement-1 gelement-3 gelement-3 gelement-3"
-        " gelement-1 gelement-4 gelement-4 gelement-4"
-        " gelement-2 gelement-4 gelement-4 gelement-4"
-        " gelement-2 gelement-5 gelement-5 gelement-6"
-        " gelement-2 gelement-5 gelement-5 gelement-6"
-    ;
-}
-
-.grid-element{
-    width: 100%;
-    height: 100%;
-    background-color: #141414;
-    border-radius: 20px;
-}
-
-.gelement-1 {
-    grid-area: gelement-1;
-}
-.gelement-2 {
-    grid-area: gelement-2;
-}
-.gelement-3 {
-    grid-area: gelement-3;
-}
-.gelement-4 {
-    grid-area: gelement-4;
-}
-.gelement-5 {
-    grid-area: gelement-5;
-}
-.gelement-6 {
-    grid-area: gelement-6;
-}
-
-.grid-flex-element{
-    display: flex;
-    height: 100%;
-    width: 100%;
-}
-
-.grid-element-box-container-1 {
-    width: 100%;
-    height: 100%;
-    display: inline-block;
-    text-align: center;
-    align-items: center;
-}
-.grid-element-box-container-2 {
-    width: 100%;
-    height: 100%;
-    display: inline-block;
-    text-align: center;
-    align-items: center;
-}
-.grid-element-box-container-3 {
-    width: 100%;
-    height: 100%;
-    display: inline-block;
-    text-align: center;
-    align-items: center;
-}
-.grid-element-box-container-4 {
-    width: 100%;
-    height: 100%;
-    display: inline-block;
-    text-align: center;
-    align-items: center;
-}
-.grid-element-box-container-5 {
-    width: 100%;
-    height: 100%;
-    display: inline-block;
-    text-align: center;
-    align-items: center;
-}
-.grid-element-box-container-6 {
-    width: 100%;
-    height: 100%;
-    display: inline-block;
-    text-align: center;
-    align-items: center;
-}
-
-#grid-cta-btn{
-    transition: all 0.3s;
-    background-color: #0E0E0E;
-    color: #12AAFB;
-    transform: translateX(10px);
-}
-
-#grid-cta-btn-arrow{
-    width: 40px;
-    height: 40px;
-} */
 
 /* ----------------------------- ABOUT US SECTION  -----------------------------*/
 
@@ -521,9 +405,34 @@
         width: 95%;
     }
 
-    .pricing-div-headings{
-        font-size: 18px;
+    #services-container{
+        width: 90%;
     }
+
+    #services-container h1{
+        font-size: 40px;
+    }
+
+    #services-container p{
+        width: 100%;
+    }
+
+    .services-div{
+        padding: 20px;
+    }
+
+    .services-div h2{
+        font-size: 28px;
+    }
+    .services-div p{
+        width: 80%;
+        font-size: 16px;
+    }
+
+    .services-div img{
+        height: 60px;
+        width: 60px;
+    }   
 
     #about-us-container{
         margin: 100px auto;
