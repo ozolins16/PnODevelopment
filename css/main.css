@@ -1,3 +1,17 @@
+/* Universal Classes */
+
+.heading3{
+    color: #12AAFB;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.heading1{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
 
 /* ----------------------------- HERO SECTION  -----------------------------*/
 
@@ -35,7 +49,6 @@
     padding-bottom: 20px;
     font-family: poppins, inter;
     font-weight: 800;
-    
 }
 
 #hero-text-container p{
@@ -77,12 +90,6 @@
 #clients-container {
     text-align: center;
 }
-  
-#clients-container h3 {
-    font-size: 22px;
-    font-weight: 600;
-    margin-bottom: 50px;
-}
 
 #client-logo-container {
     display: flex;
@@ -122,19 +129,7 @@
     margin-top: 100px;
     scroll-margin-top: 110px;
     text-align: center;
-}
-
-#services-container h3{
-    color: #12AAFB;
-    text-transform: uppercase;
-    font-size: 25px;
-}
-
-#services-container h1{
-    font-size: 48px;
-    font-weight: 700;
-    margin-bottom: 20px;
-}  
+} 
 
 #services-container p{
     width: 70%;
@@ -201,17 +196,6 @@
     margin-top: 200px;
     scroll-margin-top: 110px;
     text-align: center;
-}
-
-#pricing-container h1{
-    font-size: 48px;
-    font-weight: 700;
-}
-
-#pricing-container h3{
-    color: #12AAFB;
-    text-transform: uppercase;
-    font-size: 25px;
 }
 
 #pricing-div-container{
@@ -285,16 +269,13 @@
 #about-us-container h3{
     color: #12AAFB;
     text-transform: uppercase;
+    font-size: 25px;
 }
 
 #about-us-container h1{
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 20px;
-}
-
-#about-us-container h3{
-    font-size: 25px;
 }
 
 #about-us-div-container{
