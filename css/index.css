@@ -13,11 +13,11 @@
     z-index: -2;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border;
@@ -25,35 +25,40 @@ html{
     color: #FFF;
 }
 
-body{
+body {
     background-color: #0E0E0E;
     cursor: default;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: Poppins, sans-serif;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
 
-p{
-    font-family: inter, sans-serif; 
-}
-
-.font-inter{
+p {
     font-family: inter, sans-serif;
 }
 
-.font-poppins{
+.font-inter {
+    font-family: inter, sans-serif;
+}
+
+.font-poppins {
     font-family: Poppins, sans-serif;
 }
 
 /* ----------------------------- NAVIGATION  -----------------------------*/
 
-nav{
+nav {
     width: 100vw;
     position: fixed;
     top: 0;
@@ -61,12 +66,12 @@ nav{
     transition: background-color 0.4s ease-in-out;
 }
 
-nav.scrolled{
+nav.scrolled {
     background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(5px);
 }
 
-#nav-content-container{
+#nav-content-container {
     width: 90%;
     height: 100px;
     display: flex;
@@ -76,25 +81,25 @@ nav.scrolled{
     justify-content: space-evenly;
 }
 
-#nav-logo{
+#nav-logo {
     transition: all 0.8s;
     width: 80px;
     cursor: pointer;
 }
 
-#nav-logo:hover{
+#nav-logo:hover {
     transition: all 0.8s;
     filter: sepia(1) saturate(10000%) hue-rotate(190deg);
 }
 
-#nav-item-container{
+#nav-item-container {
     display: flex;
     flex-direction: row;
     list-style: none;
     gap: 100px;
 }
 
-.nav-item a{
+.nav-item a {
     transition: all 0.3s;
     cursor: pointer;
     font-weight: 700;
@@ -102,15 +107,17 @@ nav.scrolled{
     text-transform: uppercase;
 }
 
-.nav-item a:hover{
+.nav-item a:hover {
     transition: all 0.3s;
     color: #12AAFB;
 }
 
 #nav-cta-language-container {
     display: flex;
-    align-items: center; /* Vertically center everything inside */
-    gap: 20px; /* Optional: space between button and language selector */
+    align-items: center;
+    /* Vertically center everything inside */
+    gap: 20px;
+    /* Optional: space between button and language selector */
 }
 
 #language-selector {
@@ -120,17 +127,21 @@ nav.scrolled{
 }
 
 #language-selector img {
-    height: 30px; /* Adjust as needed */
+    height: 30px;
+    /* Adjust as needed */
     width: auto;
-    display: block; /* Removes small inline gap */
-    transition: transform 0.5s ease; /* Smooth animation */
+    display: block;
+    /* Removes small inline gap */
+    transition: transform 0.5s ease;
+    /* Smooth animation */
 }
 
 #language-selector img:hover {
-    transform: scale(1.15); /* Slightly bigger */
+    transform: scale(1.15);
+    /* Slightly bigger */
 }
 
-#nav-cta-btn{
+#nav-cta-btn {
     transition: all 0.3s;
     background-color: #FFF;
     color: #0E0E0E;
@@ -142,20 +153,20 @@ nav.scrolled{
     cursor: pointer;
 }
 
-#nav-cta-btn:hover{
+#nav-cta-btn:hover {
     transition: all 0.3s;
     background-color: #12AAFB;
     color: #FFF;
 }
 
-#burger-menu{
+#burger-menu {
     display: none;
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
 }
 
-.burger-line{
+.burger-line {
     width: 30px;
     height: 3px;
     background-color: #FFF;
@@ -163,19 +174,19 @@ nav.scrolled{
     transition: all 0.3s ease-in-out;
 }
 
-.active .burger-line:nth-child(1){
+.active .burger-line:nth-child(1) {
     transform: rotate(45deg) translateY(11px);
 }
 
-.active .burger-line:nth-child(2){
+.active .burger-line:nth-child(2) {
     opacity: 0;
 }
 
-.active .burger-line:nth-child(3){
+.active .burger-line:nth-child(3) {
     transform: rotate(-45deg) translateY(-11px);
 }
 
-#nav-item-container.active{
+#nav-item-container.active {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -191,12 +202,12 @@ nav.scrolled{
 
 /* ----------------------------- FOOTER  -----------------------------*/
 
-footer{
+footer {
     border-top: solid #FFF;
     text-align: center;
 }
 
-#footer-div-container{
+#footer-div-container {
     height: 300px;
     margin: auto;
     display: flex;
@@ -208,15 +219,15 @@ footer{
     gap: 50px;
 }
 
-.footer-div{
+.footer-div {
     width: 400px;
 }
 
-.footer-div img{
+.footer-div img {
     height: 150px;
 }
 
-.footer-links{
+.footer-links {
     display: flex;
     flex-direction: column;
     justify-content: baseline;
@@ -225,86 +236,88 @@ footer{
     text-align: left;
 }
 
-#copyright{
+#copyright {
     margin: 30px;
     color: #A8A8A8;
 }
 
-.footer-links-icon-text{
+.footer-links-icon-text {
     margin-top: 10px;
     display: flex;
     flex-direction: row;
     gap: 5px;
 }
 
-.footer-links-icon-text img{
+.footer-links-icon-text img {
     transition: all 0.3s;
 }
-.footer-links-icon-text img:hover{
+
+.footer-links-icon-text img:hover {
     transform: scale(1.1);
     cursor: pointer;
     transition: all 0.3s;
 }
 
-@media (max-width: 1400px){
-    #nav-item-container{
-        gap:50px;
+@media (max-width: 1400px) {
+    #nav-item-container {
+        gap: 50px;
     }
 
-    .footer-div{
+    .footer-div {
         width: 250px;
     }
 
-    .footer-div img{
+    .footer-div img {
         height: 100px;
     }
 
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1024px) {
 
-    nav.scrolled{
+    nav.scrolled {
         background-color: #0E0E0E;
         backdrop-filter: none;
         transition: all 0s;
     }
-    .nav-item{
+
+    .nav-item {
         margin: auto;
         padding: 5px 0px;
     }
 
-    #burger-menu{
+    #burger-menu {
         display: flex;
     }
 
-    #burger-menu:hover{
+    #burger-menu:hover {
         cursor: pointer;
     }
 
-    #nav-item-container{
+    #nav-item-container {
         display: none;
     }
 
-    #footer-div-container{
+    #footer-div-container {
         height: auto;
         padding: 50px;
     }
 
-    .footer-links{
+    .footer-links {
         text-align: center;
         align-items: center;
     }
-    .footer-links-icon-text{
+
+    .footer-links-icon-text {
         justify-content: center;
     }
 
-    .footer-div{
+    .footer-div {
         width: 300px;
     }
 
-    .footer-div img{
+    .footer-div img {
         height: 100px;
     }
 
 }
-
