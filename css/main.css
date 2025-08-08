@@ -217,17 +217,17 @@
 
 .pricing-div {
     width: 500px;
-    height: max-content;
+    height: 550px;
     padding: 30px;
-    border-top: solid #FFF 2px;
-    background-color: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(5px);
+    border-top: solid #FFF 5px;
+    border-bottom: solid #FFF 5px;
+    backdrop-filter: blur(15px);
 }
 
 .pricing-div h1 {
     font-size: 40px;
     font-weight: 700;
-    margin: 20px 0;
+    margin: 20px 0 40px 0;
     text-align: left;
 }
 
@@ -243,7 +243,10 @@
     align-items: baseline;
     justify-content: space-between;
     gap: 20px;
+    margin-bottom: 140px;
 }
+
+
 
 .pricing-div-content span {
     width: 90%;
@@ -261,6 +264,10 @@
 
 .pricing-div-content span p {
     font-size: 20px;
+}
+
+.not-doing {
+    color: rgba(255, 255, 255, 0.3);
 }
 
 /* ----------------------------- ABOUT US SECTION  -----------------------------*/
