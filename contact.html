@@ -89,17 +89,5 @@
         </div>
         <p id="copyright">©COPYRIGHT 2025 - P&O DEVELOPMENT</p>
     </footer>
-<script type="module">
-  import emailjs from 'https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js';
-
-  emailjs.init('d3ESZILjTFYhvL1zV'); // Replace this!
-
-  document.getElementById("contact-form").addEventListener("submit", function (event) {
-    event.preventDefault();
-
-    emailjs.sendForm("service_fceicxs", "template_rbqlw7h", this)
-    .then(location.reload());
-  });
-</script>
 </body>
 </html>
