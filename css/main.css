@@ -487,8 +487,8 @@
     }
 
     .client-logo {
-    width: 180px;
-    height: 90px;
+        width: 180px;
+        height: 90px;
     }
 
 
@@ -501,6 +501,4 @@
         align-items: center;
         gap: 0px;
     }
-
-    
 }
