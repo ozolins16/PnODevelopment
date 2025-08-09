@@ -137,7 +137,8 @@
         flex-wrap: wrap;
         gap: 20px;
         height: fit-content;
-        align-items: center;
+        align-items: baseline;
+        text-align: left;
     }
 
     .contact-heading {
