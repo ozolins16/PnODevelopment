@@ -239,7 +239,9 @@
     padding: 30px 30px 50px 30px;
     border-bottom: solid #FFF 2px;
     width: 55%;
-    margin: 150px auto -100px auto;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 0;
 }
 
 #clients-container h3 {
@@ -282,7 +284,7 @@
 
 #about-us-container {
     width: 90%;
-    margin: 200px auto;
+    margin: 100px auto;
     scroll-margin-top: 110px;
     text-align: center;
 }
