@@ -38,3 +38,23 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
+document.getElementById("contact-form").addEventListener("submit", async function(e) {
+  e.preventDefault(); // stop normal form submission
+  const form = e.target;
+
+  const formData = new FormData(form);
+
+  const response = await fetch(form.action, {
+    method: "POST",
+    body: formData,
+    headers: { 'Accept': 'application/json' }
+  });
+
+  if (response.ok) {
+    // redirect to your own page
+    window.location.href = "https://pnodevelopment.com/";
+  } else {
+    alert("There was a problem submitting the form.");
+  }
+});
