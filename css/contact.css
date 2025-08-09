@@ -129,6 +129,7 @@
         width: 90%;
         flex-wrap: wrap;
         text-align: center;
+        gap: 100px;
     }
 
     #contact-header {
@@ -139,12 +140,13 @@
         align-items: center;
     }
 
-    #contact-header h1 {
+    .contact-heading {
         font-size: 48px;
     }
 
-    #contact-header p {
+    .contact-paragraph {
         width: 80%;
+        margin-bottom: 0;
     }
 
     #contact-info {
