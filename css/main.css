@@ -479,6 +479,7 @@
     #clients-container{
         border-bottom: none;
         margin-bottom: auto;
+        width: 90%;
     }
 
     #client-logo-container {
