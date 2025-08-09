@@ -1,3 +1,4 @@
+//NAV SCROLL EFFECT
 document.addEventListener('scroll', () =>{
     const navbar = document.querySelector('nav')
     const navItemContainer = document.getElementById('nav-item-container')
@@ -8,6 +9,8 @@ document.addEventListener('scroll', () =>{
     }
 })
 
+
+// BURGER MENU TOGGLE
 document.addEventListener('DOMContentLoaded', () => {
     const burgerMenu = document.getElementById('burger-menu');
     const navItemContainer = document.getElementById('nav-item-container');
@@ -15,6 +18,14 @@ document.addEventListener('DOMContentLoaded', () => {
     burgerMenu.addEventListener('click', () => {
         navItemContainer.classList.toggle('active');
         burgerMenu.classList.toggle('active');
+    });
+
+    const navLinks = navItemContainer.querySelectorAll('a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navItemContainer.classList.remove('active');
+            burgerMenu.classList.remove('active');
+        });
     });
 
     // Close the menu when clicking outside of it
@@ -27,6 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+// SMOOTH SCROLLING AND URL HASH MANAGEMENT
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault(); // Stop the #section-id from appearing in the URL
@@ -39,6 +51,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+
+// FORM SUBMISSION
 document.getElementById("contact-form").addEventListener("submit", async function(e) {
   e.preventDefault(); // stop normal form submission
   const form = e.target;
