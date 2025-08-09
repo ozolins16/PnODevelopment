@@ -63,13 +63,19 @@ nav {
     position: fixed;
     top: 0;
     z-index: 2;
-    transition: background-color 0.4s ease-in-out;
+    transition: all 1s;
+    transform: translateY(0); /* default state */
+}
+
+nav.hidden {
+    transform: translateY(-100%);
 }
 
 nav.scrolled {
     background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(5px);
 }
+
 
 #nav-content-container {
     width: 90%;
@@ -110,35 +116,6 @@ nav.scrolled {
 .nav-item a:hover {
     transition: all 0.3s;
     color: #12AAFB;
-}
-
-#nav-cta-language-container {
-    display: flex;
-    align-items: center;
-    /* Vertically center everything inside */
-    gap: 20px;
-    /* Optional: space between button and language selector */
-}
-
-#language-selector {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#language-selector img {
-    height: 30px;
-    /* Adjust as needed */
-    width: auto;
-    display: block;
-    /* Removes small inline gap */
-    transition: transform 0.5s ease;
-    /* Smooth animation */
-}
-
-#language-selector img:hover {
-    transform: scale(1.15);
-    /* Slightly bigger */
 }
 
 #nav-cta-btn {
@@ -279,6 +256,11 @@ footer {
         background-color: #0E0E0E;
         backdrop-filter: none;
         transition: all 0s;
+    }
+
+    nav.hidden {
+        transform: translateY(-100%);
+        transition: all 1s;
     }
 
     .nav-item {

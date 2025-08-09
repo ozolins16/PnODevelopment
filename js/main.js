@@ -1,13 +1,29 @@
 //NAV SCROLL EFFECT
-document.addEventListener('scroll', () =>{
-    const navbar = document.querySelector('nav')
-    const navItemContainer = document.getElementById('nav-item-container')
-    if(window.scrollY > 0){
-        navbar.classList.add('scrolled')
-    }else{
-        navbar.classList.remove('scrolled')
-    }
-})
+document.addEventListener('DOMContentLoaded', () => {
+    const navbar = document.querySelector('nav');
+    let lastScrollTop = 0;
+
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.scrollY || document.documentElement.scrollTop;
+
+        // Blur background when scrolling down from top
+        if (currentScroll > 0) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+
+        // Hide navbar when scrolling down, show when scrolling up
+        if (currentScroll > lastScrollTop && currentScroll > 100) {
+            navbar.classList.add('hidden');
+        } else {
+            navbar.classList.remove('hidden');
+        }
+
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // prevent negative values
+    });
+});
+
 
 
 // BURGER MENU TOGGLE
