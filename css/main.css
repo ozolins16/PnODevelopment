@@ -412,7 +412,7 @@
 
 @media (max-width: 768px) {
     #hero-text-container {
-        width: 80%;
+        width: 90%;
         margin-top: 30%;
     }
 
@@ -422,12 +422,12 @@
 
     #hero-text-container h1 {
         font-size: 40px;
-        width: 95%;
+        width: 100%;
     }
 
     #hero-text-container p {
         font-size: 20px;
-        width: 95%;
+        width: 100%;
     }
 
     #services-container {
