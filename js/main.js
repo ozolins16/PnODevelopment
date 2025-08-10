@@ -1,3 +1,21 @@
+const hiddenElements = document.querySelectorAll('.hidden');
+
+document.addEventListener("DOMContentLoaded", () => {
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+      // Optional: Stop observing once it’s shown
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0 });
+
+hiddenElements.forEach(el => observer.observe(el));
+console.log('Observed:', entry.target, entry.isIntersecting);
+});
+
+
 //NAV SCROLL EFFECT
 document.addEventListener('DOMContentLoaded', () => {
     const navbar = document.querySelector('nav');
@@ -15,9 +33,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Hide navbar when scrolling down, show when scrolling up
         if (currentScroll > lastScrollTop && currentScroll > 100) {
-            navbar.classList.add('hidden');
+            navbar.classList.add('hide');
         } else {
-            navbar.classList.remove('hidden');
+            navbar.classList.remove('hide');
         }
 
         lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // prevent negative values
@@ -88,3 +106,5 @@ document.getElementById("contact-form").addEventListener("submit", async functio
     alert("There was a problem submitting the form.");
   }
 });
+
+
