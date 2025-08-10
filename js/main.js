@@ -9,7 +9,7 @@ const observer = new IntersectionObserver((entries) => {
       observer.unobserve(entry.target);
     }
   });
-}, { threshold: 0 });
+}, { threshold: 0.5 });
 
 hiddenElements.forEach(el => observer.observe(el));
 console.log('Observed:', entry.target, entry.isIntersecting);
