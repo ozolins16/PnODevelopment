@@ -7,7 +7,7 @@ canvas.height = window.innerHeight;
 
 const lines = [];
 const lineCount = 20;
-const maxAmplitude = canvas.height / 4;
+const maxAmplitude = canvas.height / 3;
 const frequency = 0.01;
 const spacing = 20;
 
@@ -15,9 +15,9 @@ const spacing = 20;
 for (let i = 0; i < lineCount; i++) {
     lines.push({
     phase: Math.random() * Math.PI * 2,
-    amplitude: maxAmplitude * (0.3 + 0.7 * Math.random()),
+    amplitude: maxAmplitude * (0.6),
     speed: 0.003 + Math.random() * 0.003,
-    opacity: 0.07 + Math.random() * 0.07,
+    opacity: 0.05 + Math.random() * 0.05,
     offsetY: canvas.height / 2 + (i - lineCount / 2) * spacing,
     frequency: frequency * (0.5 + Math.random())
     });
@@ -31,7 +31,7 @@ function draw() {
 
     lines.forEach((line) => {
     ctx.beginPath();
-    ctx.strokeStyle = `rgba(255,255,255,${line.opacity})`; // <-- White lines
+    ctx.strokeStyle = `rgba(18,170,251,${line.opacity})`; // <-- White lines
     ctx.lineWidth = 1;
 
     for (let x = 0; x <= canvas.width; x++) {

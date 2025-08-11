@@ -1,7 +1,31 @@
+/* Universal Classes */
+
+.heading3 {
+    color: #12AAFB;
+    text-transform: uppercase;
+    font-size: 25px;
+    text-align: center;
+}
+
+.heading1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.paragraph1 {
+    width: 70%;
+    margin: auto;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
 
 /* ----------------------------- HERO SECTION  -----------------------------*/
 
-#hero-container{
+#hero-container {
     height: 100vh;
     background-repeat: no-repeat;
     background-position: center;
@@ -12,7 +36,7 @@
     overflow: hidden;
 }
 
-#hero-text-container{
+#hero-text-container {
     width: 72%;
     margin: auto;
     margin-top: 200px;
@@ -22,29 +46,28 @@
     align-items: center;
 }
 
-#hero-text-container h3{
+#hero-text-container h3 {
     text-transform: uppercase;
-    color:#12AAFB;
+    color: #12AAFB;
     font-size: 25px;
     font-family: inter, sans-serif;
     font-weight: 800;
 }
 
-#hero-text-container h1{
+#hero-text-container h1 {
     font-size: 80px;
     padding-bottom: 20px;
     font-family: poppins, inter;
     font-weight: 800;
-    
 }
 
-#hero-text-container p{
+#hero-text-container p {
     font-size: 25px;
     width: 47%;
     line-height: 150%;
 }
 
-#hero-cta-btn{
+#hero-cta-btn {
     transition: all 0.3s;
     background-color: #12AAFB;
     border: none;
@@ -60,37 +83,179 @@
     cursor: pointer;
 }
 
-#hero-cta-btn-arrow{
+#hero-cta-btn-arrow {
     width: 40px;
     height: 40px;
 }
 
-#hero-cta-btn:hover{
+#hero-cta-btn:hover {
     transition: all 0.3s;
     background-color: #0E0E0E;
     color: #12AAFB;
     transform: translateX(10px);
 }
 
+
+
+/* ----------------------------- OUR SERVICES SECTION  -----------------------------*/
+
+#services-container {
+    width: 90vw;
+    margin: auto;
+    scroll-margin-top: 110px;
+    text-align: center;
+}
+
+#services-div-container {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 75px;
+}
+
+.services-div {
+    width: 450px;
+    height: 400px;
+    padding: 0 0 20px 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    transition: all 0.3s ease;
+}
+
+.services-div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.75);
+}
+
+.services-div img {
+    height: 80px;
+    width: 80px;
+}
+
+.services-div h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.services-div p {
+    width: 80% !important;
+    font-size: 19px !important;
+    font-weight: 500;
+    color: #DEDEDE;
+}
+
+
+/* ----------------------------- PRICING SECTION  -----------------------------*/
+
+
+#pricing-container {
+    width: 90vw;
+    margin: auto;
+    margin-top: 200px;
+    scroll-margin-top: 110px;
+}
+
+
+#pricing-div-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 100px;
+    margin-top: 75px;
+}
+
+.pricing-div {
+    width: 500px;
+    height: 550px;
+    padding: 30px;
+    border-top: solid #FFF 3px;
+    border-bottom: solid #FFF 3px;
+    backdrop-filter: blur(15px);
+}
+
+.pricing-div h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 20px 0 40px 0;
+    text-align: left;
+}
+
+.pricing-div h1 span {
+    font-size: 16px;
+    font-weight: 500;
+    color: #B8B8B8;
+}
+
+.pricing-div-content {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 140px;
+}
+
+
+
+.pricing-div-content span {
+    width: 90%;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    font-weight: 600;
+    gap: 20px;
+}
+
+.pricing-div-content span img {
+    height: 20px;
+    width: 20px;
+}
+
+.pricing-div-content span p {
+    font-size: 20px;
+}
+
+.not-doing {
+    color: rgba(255, 255, 255, 0.3);
+}
+
 /* ----------------------------- CLIENTS SECTION  -----------------------------*/
 
 #clients-container {
     text-align: center;
+    padding: 30px 30px 50px 30px;
+    width: 55%;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 0;
 }
-  
+
 #clients-container h3 {
-    font-size: 22px;
-    font-weight: 600;
-    margin-bottom: 50px;
+    font-size: 25px;
+    margin-bottom: 35px;
 }
 
 #client-logo-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 60px;
+    gap: 100px;
     flex-wrap: wrap;
 }
+
 
 .client-logo {
     width: 240px;
@@ -114,289 +279,28 @@
     opacity: 1;
 }
 
-/* ----------------------------- OUR SERVICES SECTION  -----------------------------*/
-
-#services-container{
-    width: 90vw;
-    margin: auto;
-    margin-top: 100px;
-    scroll-margin-top: 110px;
-}
-
-#services-container h3{
-    color: #12AAFB;
-    text-transform: uppercase;
-    
-}
-
-#services-div-container{
-    margin-top: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 75px;
-}
-
-.services-div{
-    width: 450px;
-    height: 300px;
-    background-color: #343434;
-    border-radius: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 10px;
-    transition: all 0.3s ease;
-}
-
-.services-div:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 60px rgba(0, 0, 0, 0.75);
-  }
-
-.services-div img{
-    height: 80px;
-    width: 80px;
-}
-
-.services-div h2{
-    font-size: 30px;
-    font-weight: 700;
-}
-
-.services-div p{
-    width: 60%;
-    font-size: 20px;
-    font-weight: 500;
-    color: #DEDEDE;
-} 
-  
-
-/* ----------------------------- PRICING SECTION  -----------------------------*/
-
-
-#pricing-container{
-    width: 90vw;
-    margin: auto;
-    margin-top: 200px;
-    scroll-margin-top: 110px;
-}
-
-#pricing-container h3{
-    color: #12AAFB;
-    text-transform: uppercase;
-}
-
-#pricing-div-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: auto;
-    gap: 100px;
-    margin-top: 75px;
-}
-
-.pricing-div{
-    width: 500px;
-    height: 425px;
-    border-top: solid #FFF 1px;
-}
-
-.pricing-div-white{
-    background-color: #FFF;
-}
-
-.pricing-div-headings{
-    width: 90%;
-    margin: auto;
-    padding: 20px 0;
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: space-between;
-    font-size: 22px;
-}
-
-.pricing-div-headings-white h2{
-    color: black;
-}
-
-.pricing-div-headings h2 span{
-    font-size: 12px;
-    color: #A8A8A8;
-}
-
-.pricing-div-content{
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 30px;
-}
-
-
-
-.pricing-div-content span {
-    width: 90%;
-    margin: auto;
-    display: flex;
-    justify-content: baseline;
-    align-items: center;
-    font-weight: 600;
-    gap: 20px;
-}
-
-.pricing-div-content span img{
-    height: 48px;
-    width: 48px;
-}
-
-.pricing-div-content span p{
-    font-size: 22px;
-}
-
-.pricing-div-content-white span p{
-    color: black;
-}
-
-/* 
-#pricing-container{
-    width: 90%;
-    margin: auto;
-    margin-top: 200px;
-    scroll-margin-top: 110px;
-}
-#pricing-container h3{
-    color: #12AAFB;
-}
-
-
-.grid-container{
-    align-self: center;
-    width: fit-content;
-    display: grid;
-    align-items: center;
-    margin: auto;
-    margin-top: 100px;
-    gap: 20px;
-    grid-template-columns: repeat(4, 382px);
-    grid-template-rows: repeat(5, 196px);
-    grid-template-areas:
-        " gelement-1 gelement-3 gelement-3 gelement-3"
-        " gelement-1 gelement-4 gelement-4 gelement-4"
-        " gelement-2 gelement-4 gelement-4 gelement-4"
-        " gelement-2 gelement-5 gelement-5 gelement-6"
-        " gelement-2 gelement-5 gelement-5 gelement-6"
-    ;
-}
-
-.grid-element{
-    width: 100%;
-    height: 100%;
-    background-color: #141414;
-    border-radius: 20px;
-}
-
-.gelement-1 {
-    grid-area: gelement-1;
-}
-.gelement-2 {
-    grid-area: gelement-2;
-}
-.gelement-3 {
-    grid-area: gelement-3;
-}
-.gelement-4 {
-    grid-area: gelement-4;
-}
-.gelement-5 {
-    grid-area: gelement-5;
-}
-.gelement-6 {
-    grid-area: gelement-6;
-}
-
-.grid-flex-element{
-    display: flex;
-    height: 100%;
-    width: 100%;
-}
-
-.grid-element-box-container-1 {
-    width: 100%;
-    height: 100%;
-    display: inline-block;
-    text-align: center;
-    align-items: center;
-}
-.grid-element-box-container-2 {
-    width: 100%;
-    height: 100%;
-    display: inline-block;
-    text-align: center;
-    align-items: center;
-}
-.grid-element-box-container-3 {
-    width: 100%;
-    height: 100%;
-    display: inline-block;
-    text-align: center;
-    align-items: center;
-}
-.grid-element-box-container-4 {
-    width: 100%;
-    height: 100%;
-    display: inline-block;
-    text-align: center;
-    align-items: center;
-}
-.grid-element-box-container-5 {
-    width: 100%;
-    height: 100%;
-    display: inline-block;
-    text-align: center;
-    align-items: center;
-}
-.grid-element-box-container-6 {
-    width: 100%;
-    height: 100%;
-    display: inline-block;
-    text-align: center;
-    align-items: center;
-}
-
-#grid-cta-btn{
-    transition: all 0.3s;
-    background-color: #0E0E0E;
-    color: #12AAFB;
-    transform: translateX(10px);
-}
-
-#grid-cta-btn-arrow{
-    width: 40px;
-    height: 40px;
-} */
-
 /* ----------------------------- ABOUT US SECTION  -----------------------------*/
 
-#about-us-container{
+#about-us-container {
     width: 90%;
-    margin: 200px auto;
+    margin: 100px auto;
     scroll-margin-top: 110px;
+    text-align: center;
 }
 
-#about-us-container h3{
+#about-us-container h3 {
     color: #12AAFB;
     text-transform: uppercase;
+    font-size: 25px;
 }
 
-#about-us-div-container{
+#about-us-container h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#about-us-div-container {
     margin: auto;
     margin-top: 50px;
     display: flex;
@@ -407,131 +311,193 @@
     gap: 300px;
 }
 
-.person-div{
+.person-div {
     width: 300px;
     height: 550px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
     text-align: center;
 }
 
-.person-image{
+.person-image {
     height: 230px;
     width: 230px;
     border-radius: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    margin-bottom: 0;
 }
 
-.person-image-linards{
+.person-image-linards {
     background-image: url(../Images/linards.jpg);
 
 }
 
-.person-image-martins{
+.person-image-martins {
     background-image: url(../Images/martins.jpg);
 }
 
-.person-name{
+.person-name {
     font-size: 32px;
 }
 
-.person-name span{
-    font-size: 15px;
+.person-status {
+    font-size: 20px;
+    color: #B8B8B8;
+    font-weight: 800;
 }
 
-.person-div-line{
+.person-div-line {
     width: 90%;
     height: 3px;
     background-color: #12AAFB;
 }
 
-.person-text{
+.person-text {
+    margin-top: 10px;
     font-weight: 600;
 }
 
-@media (max-width: 1400px) {w
-    #hero-text-container{
+@media (max-width: 1400px) {
+    w #hero-text-container {
         margin-top: 10%;
         width: 80%;
     }
 
-    #hero-text-container h3{
+    #hero-text-container h3 {
         font-size: 20px
     }
 
-    #hero-text-container h1{
+    #hero-text-container h1 {
         font-size: 60px;
     }
 
-    #hero-text-container p{
+    #hero-text-container p {
         font-size: 25px;
         width: 70%;
     }
 
-    #about-us-div-container{
+    #about-us-div-container {
         gap: 150px;
     }
 }
 
 @media (max-width: 1024px) {
-    #hero-text-container{
+    #hero-text-container {
         width: 90%;
     }
 
-    #hero-text-container h3{
+    #hero-text-container h3 {
         font-size: 20px
     }
 
-    #hero-text-container h1{
+    #hero-text-container h1 {
         font-size: 60px;
     }
 
-    #hero-text-container p{
+    #hero-text-container p {
         font-size: 25px;
         width: 70%;
     }
 
-    #about-us-div-container{
+    #about-us-div-container {
         gap: 50px;
     }
 }
 
 @media (max-width: 768px) {
-    #hero-text-container{
-        width: 80%;
+    #hero-text-container {
+        width: 90%;
         margin-top: 30%;
     }
 
-    #hero-text-container h3{
+    #hero-text-container h3 {
         font-size: 20px
     }
 
-    #hero-text-container h1{
+    #hero-text-container h1 {
         font-size: 40px;
+        width: 100%;
     }
 
-    #hero-text-container p{
+    #hero-text-container p {
         font-size: 20px;
+        width: 100%;
+    }
+
+    #services-container {
         width: 90%;
     }
 
-    .pricing-div-headings{
+    #services-container h1 {
+        font-size: 40px;
+    }
+
+    #services-container p {
+        width: 100%;
+    }
+
+    .services-div {
+        padding: 20px;
+    }
+
+    .services-div h2 {
+        font-size: 28px;
+    }
+
+    .services-div p {
+        width: 80%;
+        font-size: 16px;
+    }
+
+    .services-div img {
+        height: 60px;
+        width: 60px;
+    }
+
+    .pricing-div-content span p {
         font-size: 18px;
     }
 
-    #about-us-container{
+    .pricing-div {
+        backdrop-filter: blur(10px);
+    }
+
+    #pricing-container h1 {
+        font-size: 40px;
+    }
+
+    #pricing-container p {
+        width: 100%;
+    }
+
+    #clients-container {
+        border-bottom: none;
+        margin-bottom: auto;
+        width: 90%;
+    }
+
+    #client-logo-container {
+        gap: 50px;
+    }
+
+    .client-logo {
+        width: 180px;
+        height: 90px;
+    }
+
+
+    #about-us-container {
         margin: 100px auto;
     }
 
-    #about-us-div-container{
+    #about-us-div-container {
         flex-direction: column;
         align-items: center;
         gap: 0px;
     }
 }
-
