@@ -237,7 +237,6 @@
 #clients-container {
     text-align: center;
     padding: 30px 30px 50px 30px;
-    border-bottom: solid #FFF 2px;
     width: 55%;
     margin: auto;
     margin-top: 150px;
@@ -476,7 +475,7 @@
         width: 100%;
     }
 
-    #clients-container{
+    #clients-container {
         border-bottom: none;
         margin-bottom: auto;
         width: 90%;

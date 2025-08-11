@@ -13,13 +13,13 @@
     z-index: -2;
 }
 
-.hidden{
+.hidden {
     opacity: 0;
     transform: translateY(50px);
     transition: all 0.8s ease-in-out;
 }
 
-.show{
+.show {
     opacity: 1;
     transform: translateY(0);
 }
@@ -75,7 +75,8 @@ nav {
     top: 0;
     z-index: 2;
     transition: all 1s;
-    transform: translateY(0); /* default state */
+    transform: translateY(0);
+    /* default state */
 }
 
 nav.scrolled {
@@ -310,3 +311,5 @@ footer {
     }
 
 }
+
+@media (max-width: 768px) {}
