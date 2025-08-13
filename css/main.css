@@ -460,8 +460,17 @@
         width: 60px;
     }
 
+    .pricing-div h1{
+        font-size: 30px;
+    }
+
     .pricing-div-content span p {
-        font-size: 18px;
+        font-size: 16px;
+    }
+
+    .pricing-div-content span img{
+        height: 16px;
+        width: 16px;
     }
 
     .pricing-div {
