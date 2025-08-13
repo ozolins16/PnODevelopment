@@ -1,5 +1,9 @@
 /* Universal Classes */
 
+html, body {
+    overflow-x: hidden;
+}
+
 .heading3 {
     color: #12AAFB;
     text-transform: uppercase;
