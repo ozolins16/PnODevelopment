@@ -10,10 +10,27 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 }, { threshold: 0.5 });
-
 hiddenElements.forEach(el => observer.observe(el));
-console.log('Observed:', entry.target, entry.isIntersecting);
 });
+
+
+
+// // Typewriter effect for text
+// let i = 0;
+// const txt = "Web Development for small businesses";
+// let speed = 75; // Adjust speed of typing
+// function typeWriter(){
+//   if(i <= txt.length){
+//     document.getElementById("demo").innerHTML += txt.charAt(i);
+//     i++;
+//     setTimeout(typeWriter, speed);
+//   }
+// }
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   typeWriter();
+// });
+
 
 
 //NAV SCROLL EFFECT
