@@ -506,6 +506,8 @@ html, body {
         border-bottom: none;
         margin-bottom: auto;
         width: 90%;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     #client-logo-container {
