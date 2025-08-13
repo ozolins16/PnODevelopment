@@ -1,4 +1,4 @@
-const hiddenElements = document.querySelectorAll('.hidden');
+const hiddenElements = document.querySelectorAll('.hidden, .hidden-left, .hidden-right');
 
 document.addEventListener("DOMContentLoaded", () => {
 const observer = new IntersectionObserver((entries) => {
