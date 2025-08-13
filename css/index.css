@@ -4,6 +4,9 @@
 
 /* ----------------------------- UNIVERSAL  -----------------------------*/
 
+
+
+
 #canvas {
     position: fixed;
     top: 0;
@@ -196,6 +199,28 @@ nav.scrolled {
 }
 
 /* NAV SCROLLING */
+
+
+
+
+
+
+
+/* Scroll-bar */
+
+::-webkit-scrollbar{
+    background-color: transparent;
+    width: 5px;
+}
+
+
+::-webkit-scrollbar-thumb{
+    border-radius: 2px;
+    background-color: #FFF;
+    height: min-content;
+}
+
+
 
 /* ----------------------------- FOOTER  -----------------------------*/
 
