@@ -129,12 +129,13 @@
     justify-content: center;
     text-align: center;
     gap: 20px;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-in-out;
 }
 
 .services-div:hover {
-    transform: translateY(-5px);
+    transform: translateY(-20px);
     box-shadow: 0 0 60px rgba(0, 0, 0, 0.75);
+    transition: all 0.3s ease-in-out;
 }
 
 .services-div img {
@@ -145,6 +146,7 @@
 .services-div h2 {
     font-size: 30px;
     font-weight: 700;
+    width: 80%;
 }
 
 .services-div p {
@@ -228,7 +230,7 @@
     font-size: 20px;
 }
 
-.not-doing {
+.not-included {
     color: rgba(255, 255, 255, 0.3);
 }
 
@@ -459,8 +461,17 @@
         width: 60px;
     }
 
+    .pricing-div h1{
+        font-size: 30px;
+    }
+
     .pricing-div-content span p {
-        font-size: 18px;
+        font-size: 16px;
+    }
+
+    .pricing-div-content span img{
+        height: 16px;
+        width: 16px;
     }
 
     .pricing-div {
