@@ -512,3 +512,14 @@
         gap: 0px;
     }
 }
+
+@media (max-width: 601px){
+    .pricing-div-content {
+        margin-bottom: 100px;
+    }
+
+    .pricing-div {
+        height: fit-content;
+        padding-bottom: 0px;
+    }
+}
