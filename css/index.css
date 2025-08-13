@@ -151,6 +151,7 @@ nav.scrolled {
     font-weight: 900;
     padding: 10px 20px;
     cursor: pointer;
+    display: block;
 }
 
 #nav-cta-btn:hover {
