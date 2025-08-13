@@ -435,6 +435,18 @@ html, body {
         width: 100%;
     }
 
+    #hero-cta-btn {
+        padding: 5px 12.5px;
+        font-size: 20px;
+        gap: 10px;
+    }
+
+    #hero-cta-btn-arrow {
+        width: 25px;
+        height: 25px;
+    }
+
+
     #services-container {
         width: 90%;
     }
