@@ -77,3 +77,14 @@
 .not-included {
     color: rgba(255, 255, 255, 0.3);
 }
+
+@media (max-width: 601px) {
+    .pricing-div-content {
+        margin-bottom: 100px;
+    }
+
+    .pricing-div {
+        height: fit-content;
+        padding-bottom: 0px;
+    }
+}
