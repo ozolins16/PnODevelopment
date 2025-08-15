@@ -1,0 +1,89 @@
+.paragraph {
+    width: 70%;
+    margin: auto;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+#about-us-container {
+    width: 90%;
+    margin: 100px auto;
+    scroll-margin-top: 110px;
+    text-align: center;
+}
+
+#about-us-container h3 {
+    color: #12AAFB;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+#about-us-container h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#about-us-div-container {
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+}
+
+.person-div {
+    width: 500px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    /* border: solid 2px green; */
+}
+
+.person-image {
+    height: 230px;
+    width: 230px;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 0;
+}
+
+.person-image-linards {
+    background-image: url(/Images/linards.jpg);
+
+}
+
+.person-image-martins {
+    background-image: url(/Images/martins.jpg);
+}
+
+.person-name {
+    font-size: 32px;
+}
+
+.person-status {
+    font-size: 20px;
+    color: #B8B8B8;
+    font-weight: 800;
+}
+
+.person-div-line {
+    width: 90%;
+    height: 3px;
+    background-color: #12AAFB;
+}
+
+.person-text {
+    margin-top: 10px;
+    font-weight: 600;
+}
