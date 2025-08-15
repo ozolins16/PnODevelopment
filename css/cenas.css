@@ -1,0 +1,79 @@
+#hero-content-container {
+    width: 90vw;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+#pricing-container {
+    width: 90vw;
+    margin: auto;
+    margin-top: 200px;
+    scroll-margin-top: 110px;
+}
+
+
+#pricing-div-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 100px;
+    margin-top: 75px;
+}
+
+.pricing-div {
+    width: 500px;
+    height: 550px;
+    padding: 30px;
+    border-top: solid #FFF 3px;
+    border-bottom: solid #FFF 3px;
+    backdrop-filter: blur(15px);
+}
+
+.pricing-div h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 20px 0 40px 0;
+    text-align: left;
+}
+
+.pricing-div h1 span {
+    font-size: 16px;
+    font-weight: 500;
+    color: #B8B8B8;
+}
+
+.pricing-div-content {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 140px;
+}
+
+
+
+.pricing-div-content span {
+    width: 90%;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    font-weight: 600;
+    gap: 20px;
+}
+
+.pricing-div-content span img {
+    height: 20px;
+    width: 20px;
+}
+
+.pricing-div-content span p {
+    font-size: 20px;
+}
+
+.not-included {
+    color: rgba(255, 255, 255, 0.3);
+}
