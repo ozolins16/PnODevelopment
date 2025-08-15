@@ -314,12 +314,12 @@ html, body {
 }
 
 .person-image-linards {
-    background-image: url(../Images/linards.jpg);
+    background-image: url(/Images/linards.jpg);
 
 }
 
 .person-image-martins {
-    background-image: url(../Images/martins.jpg);
+    background-image: url(/Images/martins.jpg);
 }
 
 .person-name {
