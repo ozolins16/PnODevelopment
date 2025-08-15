@@ -13,26 +13,6 @@ const observer = new IntersectionObserver((entries) => {
 hiddenElements.forEach(el => observer.observe(el));
 });
 
-
-
-// // Typewriter effect for text
-// let i = 0;
-// const txt = "Web Development for small businesses";
-// let speed = 75; // Adjust speed of typing
-// function typeWriter(){
-//   if(i <= txt.length){
-//     document.getElementById("demo").innerHTML += txt.charAt(i);
-//     i++;
-//     setTimeout(typeWriter, speed);
-//   }
-// }
-
-// document.addEventListener("DOMContentLoaded", () => {
-//   typeWriter();
-// });
-
-
-
 //NAV SCROLL EFFECT
 document.addEventListener('DOMContentLoaded', () => {
     const navbar = document.querySelector('nav');
@@ -86,20 +66,6 @@ document.addEventListener('DOMContentLoaded', () => {
             burgerMenu.classList.remove('active');
         }
     });
-});
-
-
-// SMOOTH SCROLLING AND URL HASH MANAGEMENT
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault(); // Stop the #section-id from appearing in the URL
-    const sectionId = this.getAttribute('href').substring(1); // Get ID without #
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' }); // Keep your smooth scrolling
-      history.replaceState(null, null, window.location.pathname); // Remove # from URL
-    }
-  });
 });
 
 

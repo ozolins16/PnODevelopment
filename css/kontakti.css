@@ -123,6 +123,35 @@
     transition: 0.3s all;
 }
 
+@media screen and (max-width: 1200px) {
+    #contact-container {
+        flex-direction: column;
+        width: 90%;
+        gap: 100px;
+    }
+
+    #contact-header {
+        width: 100%;
+    }
+
+    .contact-heading {
+        font-size: 48px;
+    }
+
+    .contact-paragraph {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    #contact-info {
+        width: 90%;
+        padding-left: 0;
+        border-left: none;
+    }
+
+}
+
+
 @media screen and (max-width: 768px) {
     #contact-container {
         width: 90%;
