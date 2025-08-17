@@ -1,6 +1,6 @@
 .paragraph {
     width: 70%;
-    margin: auto;
+    margin: auto auto 20px auto;
     font-size: 20px;
     font-weight: 400;
     text-align: center;
@@ -86,4 +86,24 @@
 .person-text {
     margin-top: 10px;
     font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+    #about-us-div-container {
+        gap: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    #about-us-div-container {
+        gap: 50px;
+    }
+
+    .person-div {
+        width: 90%;
+    }
+
+    #about-us-container {
+        margin: 100px auto;
+    }
 }
