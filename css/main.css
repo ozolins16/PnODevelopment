@@ -381,6 +381,7 @@ body {
         width: 90%;
         height: fit-content;
         /* margin-bottom: 100px; */
+        margin-top: 15%;
     }
 
     #hero-text-container h3 {
@@ -518,6 +519,11 @@ body {
 }
 
 @media (max-width: 601px) {
+    
+    #hero-text-container{
+        margin-top: 30%;
+    }
+
     .pricing-div-content {
         margin-bottom: 100px;
     }
