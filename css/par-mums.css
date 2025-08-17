@@ -44,21 +44,43 @@
 }
 
 .paragraph-box {
-    height: 200px;
+    display:flex;
+    flex-direction: column;
+    height: 300px;
     width: 300px;
     background-color: transparent;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    text-align: center;
     backdrop-filter: blur(10px);
+    text-align: center;
+    align-items: center;
+}
+
+.paragraph-box h3 {
+    font-size: 24px;
+    padding: 5px;
+    border-bottom: solid 2px #12AAFB;
+}
+
+.paragraph-box p {
+    width: 90%;
+    font-size: 18px;
+    margin: auto;
+    font-weight: 400;
+    text-align: left;
     overflow-y: auto;
 }
 
-.paragraph-box h2 {
-    margin-top: 0;
+/* Scroll-bar for the boxes*/
+
+.paragraph-box::-webkit-scrollbar{
+    background-color: transparent;
+    width: 0;
 }
 
+.paragraph-box::-webkit-scrollbar-thumb{
+    background-color: white;
+}
 
 /* ----------------------------- PERSON SECTION -----------------------------*/
 
