@@ -8,13 +8,15 @@ body {
 
 /* ----------------------------- HERO SECTION  -----------------------------*/
 
-#hero-container {
+/* sis nav vajadzigs */
+
+/* #hero-container {
     height: 100vh;
     margin: auto;
     display: flex;
     align-items: center;
-    overflow: hidden;
-}
+    overflow-x: hidden;
+} */
 
 #hero-text-container {
     width: 72%;
@@ -347,7 +349,7 @@ body {
 @media (max-width: 1400px) {
     
     #hero-text-container {
-        margin-top: 10%;
+        margin: 10% auto 10% auto;
         width: 80%;
     }
 
@@ -370,8 +372,15 @@ body {
 }
 
 @media (max-width: 1024px) {
+    /* #hero-container{
+        height: 200vh;
+        overflow: visible;
+    } */
+
     #hero-text-container {
         width: 90%;
+        height: fit-content;
+        /* margin-bottom: 100px; */
     }
 
     #hero-text-container h3 {
@@ -395,7 +404,7 @@ body {
 @media (max-width: 768px) {
     #hero-text-container {
         width: 90%;
-        margin-top: 30%;
+        margin-top: 20%;
     }
 
     #hero-text-container h3 {
