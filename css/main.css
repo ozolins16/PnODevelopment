@@ -345,7 +345,8 @@ body {
 }
 
 @media (max-width: 1400px) {
-    w #hero-text-container {
+    
+    #hero-text-container {
         margin-top: 10%;
         width: 80%;
     }
