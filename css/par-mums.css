@@ -36,50 +36,55 @@
 #paragraph-container {
     margin-top: 100px;
     display: flex;
-    flex-direction: row;
+    flex-direction: row;   /* boxes stay side by side */
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
-    gap: 75px;
+    gap: 50px;
 }
 
 .paragraph-box {
-    display:flex;
+    display: flex;
     flex-direction: column;
-    height: 300px;
-    width: 300px;
+    width: 350px;
     background-color: transparent;
-    padding: 20px;
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
+
     text-align: center;
     align-items: center;
+
+    border-top: solid white 1px;
+    border-right: solid white 1px;
+    border-left: solid white 1px;
+    border-bottom: solid white 4px;
+    backdrop-filter: blur(10px);
+
+    height: 300px;
+    overflow: hidden;
+
+    transition: height 0.5s ease, transform 0.3s ease;
 }
 
 .paragraph-box h3 {
+    width: 50%;
     font-size: 24px;
     padding: 5px;
-    border-bottom: solid 2px #12AAFB;
+    border-bottom: solid 4px #12AAFB;
+    border-radius: 5px;
 }
 
 .paragraph-box p {
+    padding: 20px 0 0 0;
     width: 90%;
     font-size: 18px;
-    margin: auto;
     font-weight: 400;
-    text-align: left;
-    overflow-y: auto;
+    margin: 0;             /* remove auto-centering */
 }
 
-/* Scroll-bar for the boxes*/
 
-.paragraph-box::-webkit-scrollbar{
-    background-color: transparent;
-    width: 0;
-}
-
-.paragraph-box::-webkit-scrollbar-thumb{
-    background-color: white;
+/* Hover effect */
+.paragraph-box:hover {
+    transform: scale(1.05);
+    height: 400px;
 }
 
 /* ----------------------------- PERSON SECTION -----------------------------*/
