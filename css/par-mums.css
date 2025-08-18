@@ -1,37 +1,5 @@
-/* ----------------------------- THE INLINE VERSION -----------------------------*/
-
-
-/* .paragraph {
-    width: 70%;
-    margin: auto auto 20px auto;
-    font-size: 20px;
-    font-weight: 400;
-    text-align: center;
-}
-
-#about-us-container {
-    width: 90%;
-    margin: 100px auto;
-    scroll-margin-top: 110px;
-    text-align: center;
-}
-
-#about-us-container h3 {
-    color: #12AAFB;
-    text-transform: uppercase;
-    font-size: 25px;
-}
-
-#about-us-container h1 {
-    font-size: 48px;
-    font-weight: 700;
-    margin-bottom: 20px;
-} */
-
-
-
-
 /* ----------------------------- THREE BOXES SIDE BY SIDE -----------------------------*/
+
 
 #paragraph-container {
     margin-top: 100px;
@@ -151,22 +119,5 @@
 
 .person-text {
     margin-top: 10px;
-    font-weight: 600;
+    font-weight: 600;    
 }
-
-@media (max-width: 1024px) {
-    #about-us-div-container {
-        gap: 50px;
-    }
-}
-
-@media (max-width: 768px) {
-    #about-us-div-container {
-        gap: 50px;
-    }
-
-    .person-div {
-        width: 90%;
-    }
-}
-

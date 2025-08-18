@@ -372,11 +372,6 @@ body {
 }
 
 @media (max-width: 1024px) {
-    /* #hero-container{
-        height: 200vh;
-        overflow: visible;
-    } */
-
     #hero-text-container {
         width: 90%;
         height: fit-content;
