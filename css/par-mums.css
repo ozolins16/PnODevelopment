@@ -65,11 +65,10 @@
 }
 
 .paragraph-box h3 {
-    width: 50%;
+    width: 60%;
     font-size: 24px;
     padding: 5px;
     border-bottom: solid 4px #12AAFB;
-    border-radius: 5px;
 }
 
 .paragraph-box p {
@@ -89,9 +88,12 @@
 
 /* ----------------------------- PERSON SECTION -----------------------------*/
 
+.person-heading{
+    margin-top: 150px;
+}
+
 #about-us-div-container {
     margin: auto;
-    margin-top: 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
