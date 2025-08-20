@@ -1,5 +1,8 @@
 /* ----------------------------- THREE BOXES SIDE BY SIDE -----------------------------*/
 
+body {
+    overflow-x: hidden;
+}
 
 #paragraph-container {
     margin-top: 100px;
@@ -156,11 +159,11 @@
 @media (max-width: 768px) {
 
     .heading-main {
-        font-size: 40px;
+        font-size: 36px;
     }
 
     .heading1 {
-        font-size: 32px;
+        font-size: 30px;
     }
 
     #paragraph-container {
