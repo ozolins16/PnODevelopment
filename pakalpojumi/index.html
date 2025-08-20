@@ -48,33 +48,167 @@
 
     <canvas id="canvas"></canvas>
     <h1 class="heading-main">Pakalpojumi</h1>
-    <section id="services-container">
-        <h1 class="heading1 hidden">MĀJASLAPU IZSTRĀDE, PAR KO NAV JĀUZTRAUCAS</h1>
-        <p class="paragraph1 hidden">Mēs izstrādājam pielāgotas, ātras un SEO optimizētas mājaslapas maziem un vidējiem
-            uzņēmumiem Latvijā. Mūsu ar rokām kodētās mājaslapas piesaista klientu uzmanību un ietver pastāvīgus
-            atjauninājumus ar uzticamu tehnisko atbalstu.</p>
-        <div id="services-div-container">
-            <div class="services-div hidden-left">
-                <img src="../Images/Icons/web-development.png" alt="Mobilajām ierīcēm optimizēta mājaslapu izstrāde">
-                <h2>Mobilajām ierīcēm vispirms</h2>
-                <p>Mēs sākam mājaslapas izstrādi tieši mobilajām ierīcēm, nodrošinot ātru un optimizētu kodu bez liekām
-                    datnēm. Padarot Jūsu mājaslapu lietotājiem ērtāku un ātrāku.</p>
-            </div>
-            <div class="services-div hidden">
-                <img src="../Images/Icons/ui_ux.png" alt="Pilnībā responsīvas mājaslapas">
-                <h2>Pilnībā adaptīva</h2>
-                <p>Jūsu mājaslapa spēs pielāgosies jebkuram ekrāna izmēram – telefonam, planšetei vai datoram. Lietotāji
-                    varēs izbaudīt kvalitatīvu pieredzi neatkarīgi no izmantotās ierīces.</p>
-            </div>
-            <div class="services-div hidden-right">
-                <img src="../Images/Icons/seo.png" alt="Ātri ielādējošas mājaslapas SEO optimizācijai">
-                <h2>Optimizēts ielādes ātrums</h2>
-                <p>Mājaslapas ielādes ātrums ir kritiski svarīgs SEO (redzamība Google meklētājā). Mūsu mājaslapas
-                    ielādējas ātrāk nekā 2 sekundēs, lai jūs nezaudētu apmeklētājus un Google ranga pozīcijas.</p>
-            </div>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Process Timeline</title>
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+                background: #0f0f0f;
+                color: #fff;
+                line-height: 1.6;
+            }
+
+            .container {
+                max-width: 1200px;
+                margin: auto;
+                padding: 40px 20px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 40px;
+            }
+
+            .step {
+                margin-bottom: 60px;
+            }
+
+            .step h3 {
+                color: #e63946;
+                font-size: 18px;
+                margin: 0 0 10px;
+            }
+
+            .step-title {
+                font-size: 22px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+
+            .step p {
+                color: #aaa;
+                font-size: 14px;
+            }
+
+            /* Right column - flow chart */
+            .flow {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                position: relative;
+            }
+
+            .flow::before {
+                content: "";
+                position: absolute;
+                left: 15px;
+                top: 0;
+                bottom: 0;
+                width: 2px;
+                background: #e63946;
+            }
+
+            .flow-box {
+                background: #1c1c1c;
+                border: 1px solid #333;
+                padding: 15px 20px;
+                border-radius: 8px;
+                position: relative;
+                margin-left: 30px;
+            }
+
+            .flow-box::before {
+                content: "";
+                position: absolute;
+                left: -17px;
+                top: 20px;
+                width: 12px;
+                height: 12px;
+                background: #e63946;
+                border-radius: 50%;
+            }
+
+            @media (max-width: 900px) {
+                .container {
+                    grid-template-columns: 1fr;
+                }
+
+                .flow::before {
+                    left: 10px;
+                }
+
+                .flow-box {
+                    margin-left: 25px;
+                }
+            }
+        </style>
+    </head>
+    <div class="container">
+        <!-- Step 1 -->
+        <div class="step">
+            <h3>01</h3>
+            <div class="step-title">Discovery</div>
+            <p>We begin by learning about your project idea and defining the requirements for an estimate with a
+                scoped-out vision.</p>
         </div>
-        <a class="cta-button">Sākt tagad!</a>
-    </section>
+        <div class="flow">
+            <div class="flow-box">Discovery call</div>
+            <div class="flow-box">Scoping & Requirements</div>
+            <div class="flow-box">Initial MVP estimate</div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step">
+            <h3>02</h3>
+            <div class="step-title">Concept</div>
+            <p>We focus on research, user needs, and initial prototypes. After validation, we move on to UI design.</p>
+        </div>
+        <div class="flow">
+            <div class="flow-box">UX research</div>
+            <div class="flow-box">Iterative prototyping</div>
+            <div class="flow-box">Concept validation</div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step">
+            <h3>03</h3>
+            <div class="step-title">UI Design</div>
+            <p>Transform wireframes into detailed, documented interfaces. Includes polished prototypes and feedback
+                loops.</p>
+        </div>
+        <div class="flow">
+            <div class="flow-box">Iterative UI design</div>
+            <div class="flow-box">Usability testing</div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="step">
+            <h3>04</h3>
+            <div class="step-title">MVP Development</div>
+            <p>We build the MVP with agile development, ensuring quality assurance throughout.</p>
+        </div>
+        <div class="flow">
+            <div class="flow-box">MVP estimate refinement</div>
+            <div class="flow-box">Agile software development</div>
+            <div class="flow-box">Quality assurance</div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="step">
+            <h3>05</h3>
+            <div class="step-title">Scaling</div>
+            <p>We deploy to production, gather feedback, and continuously improve with new features.</p>
+        </div>
+        <div class="flow">
+            <div class="flow-box">Production deployment</div>
+            <div class="flow-box">User feedback collection</div>
+            <div class="flow-box">Development of new features</div>
+        </div>
+    </div>
     <footer>
         <div id="footer-div-container">
             <div class="footer-div">
