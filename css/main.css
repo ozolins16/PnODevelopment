@@ -10,13 +10,13 @@ body {
 
 /* sis nav vajadzigs */
 
-/* #hero-container {
+#hero-container {
     height: 100vh;
     margin: auto;
     display: flex;
     align-items: center;
     overflow-x: hidden;
-} */
+}
 
 #hero-text-container {
     width: 72%;
@@ -347,7 +347,7 @@ body {
 }
 
 @media (max-width: 1400px) {
-    
+
     #hero-text-container {
         margin: 10% auto 10% auto;
         width: 80%;
@@ -514,8 +514,8 @@ body {
 }
 
 @media (max-width: 601px) {
-    
-    #hero-text-container{
+
+    #hero-text-container {
         margin-top: 30%;
     }
 
