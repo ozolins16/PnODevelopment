@@ -4,7 +4,7 @@
 
 /* ----------------------------- UNIVERSAL  -----------------------------*/
 
-.heading-main{
+.heading-main {
     margin: 150px 0 50px 0;
     color: #12AAFB;
     text-transform: uppercase;
@@ -70,13 +70,13 @@
     transition: all 0.8s ease-in-out;
 }
 
-.hidden-right{
+.hidden-right {
     opacity: 0;
     transform: translateX(50px);
     transition: all 0.8s ease-in-out;
 }
 
-.hidden-left{
+.hidden-left {
     opacity: 0;
     transform: translateX(-50px);
     transition: all 0.8s ease-in-out;
@@ -250,13 +250,13 @@ nav.scrolled {
 
 /* Scroll-bar */
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     background-color: transparent;
     width: 5px;
 }
 
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     border-radius: 2px;
     background-color: #FFF;
     height: min-content;

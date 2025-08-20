@@ -4,17 +4,18 @@
 #paragraph-container {
     margin-top: 100px;
     display: flex;
-    flex-direction: row;   /* boxes stay side by side */
+    flex-direction: row;
+    /* boxes stay side by side */
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
-    gap: 100px;
+    gap: 120px;
 }
 
 .paragraph-box {
     display: flex;
     flex-direction: column;
-    width: 350px;
+    width: 400px;
     background-color: transparent;
 
     text-align: center;
@@ -51,12 +52,12 @@
 /* Hover effect */
 .paragraph-box:hover {
     transform: scale(1.05);
-    height: 400px;
+    height: 350px;
 }
 
 /* ----------------------------- PERSON SECTION -----------------------------*/
 
-.person-heading{
+.person-heading {
     margin-top: 150px;
 }
 
@@ -119,8 +120,10 @@
 
 .person-text {
     margin-top: 10px;
-    font-weight: 600;    
+    font-weight: 600;
 }
+
+/* ----------------------------- MEDIA QUERIES -----------------------------*/
 
 @media (max-width: 1400px) {
 
@@ -161,7 +164,7 @@
     }
 
     #paragraph-container {
-        gap: 40px;
+        gap: 50px;
     }
 
 
@@ -171,11 +174,14 @@
 
 }
 
-@media (max-width: 601px){
+@media (max-width: 601px) {
     .paragraph-box {
         width: 90%;
     }
 
 
-    
+    .paragraph-box:hover {
+        height: 400px;
+    }
+
 }
