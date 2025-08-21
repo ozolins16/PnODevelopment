@@ -81,6 +81,16 @@
                 <input type="text" name="user_name" placeholder="Vārds" required>
                 <input type="email" name="user_email" placeholder="E-pasta adrese" required>
                 <input type="tel" name="user_phone" placeholder="Tālruņa numurs (nav obligāts)">
+                <div id="contract-options">
+                    <span class="contract-option-box">
+                        <label for="option1" id="option1-label">Mēneša maksājums</label>
+                        <input type="checkbox" name="option1" value="Mājaslapas izstrāde" id="option1">
+                    </span>
+                    <span class="contract-option-box">
+                        <label for="option2" id="option2-label">Vienreizējs maksājums</label>
+                        <input type="checkbox" name="option2" value="Mājaslapas izstrāde" id="option2">
+                    </span>
+                </div>
                 <textarea name="message" placeholder="Ziņojums" required></textarea>
                 <input type="hidden" name="_next" value="https://pnodevelopment.com/">
                 <button type="submit">Nosūtīt</button>

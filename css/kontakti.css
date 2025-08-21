@@ -123,6 +123,38 @@
     transition: 0.3s all;
 }
 
+#contract-options{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+    justify-content: start;
+    gap: 50px;
+    padding: 0;
+    font-weight: 700;
+    padding-bottom: 20px;
+    border-bottom: white solid 2px;
+}
+
+#option1-label,
+#option2-label {
+    width: 200px;
+    text-wrap: nowrap;
+}
+
+#option1, #option2 {
+    width: 20px;
+    height: 20px;
+}
+
+.contract-option-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+
 @media screen and (max-width: 1200px) {
     #contact-container {
         flex-direction: column;
