@@ -130,7 +130,7 @@ document.getElementById("option3").addEventListener("change", function () {
     document.getElementById("option1-label").style.color = "#ffffffff";
     document.getElementById("option2-label").style.color = "#ffffffff";
   } else {
-    document.getElementById("option2-label").style.color = "#ffffffff";
+    document.getElementById("option3-label").style.color = "#ffffffff";
   }
 }
 );
