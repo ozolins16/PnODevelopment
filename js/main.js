@@ -90,47 +90,47 @@ document.getElementById("contact-form").addEventListener("submit", async functio
   }
 });
 
-document.getElementById("option1").addEventListener("change", function () {
-  const option2 = document.getElementById("option2");
-  const option3 = document.getElementById("option3");
+document.getElementById("monthly_option").addEventListener("change", function () {
+  const one_time_payment_option = document.getElementById("one_time_payment_option");
+  const contact_us_option = document.getElementById("contact_us_option");
   if (this.checked) {
-    option2.checked = false;
-    option3.checked = false;
-    document.getElementById("option1-label").style.color = "#12AAFB";
-    document.getElementById("option2-label").style.color = "#ffffffff";
-    document.getElementById("option3-label").style.color = "#ffffffff";
+    one_time_payment_option.checked = false;
+    contact_us_option.checked = false;
+    document.getElementById("monthly_option-label").style.color = "#12AAFB";
+    document.getElementById("one_time_payment_option-label").style.color = "#ffffffff";
+    document.getElementById("contact_us_option-label").style.color = "#ffffffff";
   } else {
-    document.getElementById("option1-label").style.color = "#ffffffff";
+    document.getElementById("monthly_option-label").style.color = "#ffffffff";
   }
 }
 );
 
-document.getElementById("option2").addEventListener("change", function () {
-  const option1 = document.getElementById("option1");
-  const option3 = document.getElementById("option3");
+document.getElementById("one_time_payment_option").addEventListener("change", function () {
+  const monthly_option = document.getElementById("monthly_option");
+  const contact_us_option = document.getElementById("contact_us_option");
   if (this.checked) {
-    option1.checked = false;
-    option3.checked = false;
-    document.getElementById("option2-label").style.color = "#12AAFB";
-    document.getElementById("option1-label").style.color = "#ffffffff";
-    document.getElementById("option3-label").style.color = "#ffffffff";
+    monthly_option.checked = false;
+    contact_us_option.checked = false;
+    document.getElementById("one_time_payment_option-label").style.color = "#12AAFB";
+    document.getElementById("monthly_option-label").style.color = "#ffffffff";
+    document.getElementById("contact_us_option-label").style.color = "#ffffffff";
   } else {
-    document.getElementById("option2-label").style.color = "#ffffffff";
+    document.getElementById("one_time_payment_option-label").style.color = "#ffffffff";
   }
 }
 );
 
-document.getElementById("option3").addEventListener("change", function () {
-  const option1 = document.getElementById("option1");
-  const option2 = document.getElementById("option2");
+document.getElementById("contact_us_option").addEventListener("change", function () {
+  const monthly_option = document.getElementById("monthly_option");
+  const one_time_payment_option = document.getElementById("one_time_payment_option");
   if (this.checked) {
-    option1.checked = false;
-    option2.checked = false;
-    document.getElementById("option3-label").style.color = "#12AAFB";
-    document.getElementById("option1-label").style.color = "#ffffffff";
-    document.getElementById("option2-label").style.color = "#ffffffff";
+    monthly_option.checked = false;
+    one_time_payment_option.checked = false;
+    document.getElementById("contact_us_option-label").style.color = "#12AAFB";
+    document.getElementById("monthly_option-label").style.color = "#ffffffff";
+    document.getElementById("one_time_payment_option-label").style.color = "#ffffffff";
   } else {
-    document.getElementById("option3-label").style.color = "#ffffffff";
+    document.getElementById("contact_us_option-label").style.color = "#ffffffff";
   }
 }
 );

@@ -126,7 +126,7 @@
 #contract-options{
     display: flex;
     flex-direction: row;
-    margin: 20px 0;
+    margin: 20px 0 0 0;
     justify-content: start;
     gap: 50px;
     padding: 0;
@@ -135,14 +135,14 @@
     border-bottom: white solid 2px;
 }
 
-#option1-label,
-#option2-label,
-#option3-label {
+#monthly_option-label,
+#one_time_payment_option-label,
+#contact_us_option-label {
     width: 200px;
     text-wrap: nowrap;
 }
 
-#option1, #option2, #option3 {
+#monthly_option, #one_time_payment_option, #contact_us_option {
     width: 20px;
     height: 20px;
 }
