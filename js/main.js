@@ -85,10 +85,15 @@ document.getElementById("contact-form").addEventListener("submit", async functio
   if (response.ok) {
     // redirect to your own page
     window.location.href = "https://pnodevelopment.com/";
+    alert("The Message was sent successfully!");
   } else {
     alert("There was a problem submitting the form.");
   }
 });
+
+
+// PRICING OPTIONS TOGGLE
+
 
 document.getElementById("monthly_option").addEventListener("change", function () {
   const one_time_payment_option = document.getElementById("one_time_payment_option");
