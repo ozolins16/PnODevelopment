@@ -163,6 +163,7 @@ body {
 }
 
 .pricing-div {
+    position: relative;
     width: 500px;
     height: 550px;
     padding: 30px;
@@ -215,6 +216,30 @@ body {
 
 .not-included {
     color: rgba(255, 255, 255, 0.3);
+}
+
+#pricing-cta-btn {
+    position: absolute;
+    left: 80%;
+    top: 88%;
+    transition: all 0.3s;
+    border: none;
+    border-radius: 50px;
+    font-size: 30px;
+    font-family: poppins, inter;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 5px 5px;
+}
+
+
+#pricing-cta-btn:hover {
+    transition: all 0.3s;
+    color: #12AAFB;
+    transform: scale(1.1);
 }
 
 /* ----------------------------- CLIENTS SECTION  -----------------------------*/
