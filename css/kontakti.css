@@ -136,12 +136,13 @@
 }
 
 #option1-label,
-#option2-label {
+#option2-label,
+#option3-label {
     width: 200px;
     text-wrap: nowrap;
 }
 
-#option1, #option2 {
+#option1, #option2, #option3 {
     width: 20px;
     height: 20px;
 }

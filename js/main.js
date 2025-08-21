@@ -92,10 +92,13 @@ document.getElementById("contact-form").addEventListener("submit", async functio
 
 document.getElementById("option1").addEventListener("change", function () {
   const option2 = document.getElementById("option2");
+  const option3 = document.getElementById("option3");
   if (this.checked) {
     option2.checked = false;
+    option3.checked = false;
     document.getElementById("option1-label").style.color = "#12AAFB";
     document.getElementById("option2-label").style.color = "#ffffffff";
+    document.getElementById("option3-label").style.color = "#ffffffff";
   } else {
     document.getElementById("option1-label").style.color = "#ffffffff";
   }
@@ -104,10 +107,28 @@ document.getElementById("option1").addEventListener("change", function () {
 
 document.getElementById("option2").addEventListener("change", function () {
   const option1 = document.getElementById("option1");
+  const option3 = document.getElementById("option3");
   if (this.checked) {
     option1.checked = false;
+    option3.checked = false;
     document.getElementById("option2-label").style.color = "#12AAFB";
     document.getElementById("option1-label").style.color = "#ffffffff";
+    document.getElementById("option3-label").style.color = "#ffffffff";
+  } else {
+    document.getElementById("option2-label").style.color = "#ffffffff";
+  }
+}
+);
+
+document.getElementById("option3").addEventListener("change", function () {
+  const option1 = document.getElementById("option1");
+  const option2 = document.getElementById("option2");
+  if (this.checked) {
+    option1.checked = false;
+    option2.checked = false;
+    document.getElementById("option3-label").style.color = "#12AAFB";
+    document.getElementById("option1-label").style.color = "#ffffffff";
+    document.getElementById("option2-label").style.color = "#ffffffff";
   } else {
     document.getElementById("option2-label").style.color = "#ffffffff";
   }
