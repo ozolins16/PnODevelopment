@@ -510,6 +510,18 @@ body {
         width: 100%;
     }
 
+    #pricing-cta-btn {
+        left: 80%;
+        top: 84%;
+    }
+
+
+    #pricing-cta-btn:hover {
+        transition: all 0.3s;
+        transform: scale(1.05);
+    }
+
+
     #clients-container {
         border-bottom: none;
         margin-bottom: auto;
@@ -552,5 +564,11 @@ body {
     .pricing-div {
         height: fit-content;
         padding-bottom: 0px;
+    }
+}
+
+@media (max-width: 500px) {
+    #pricing-cta-btn {
+        display: none;
     }
 }
