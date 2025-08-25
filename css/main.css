@@ -424,6 +424,10 @@ body {
 }
 
 @media (max-width: 768px) {
+    #hero-container {
+        padding-top: 3%;
+    }
+
     #hero-text-container {
         width: 90%;
         margin-top: 20%;
