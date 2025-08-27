@@ -78,6 +78,25 @@
     color: rgba(255, 255, 255, 0.3);
 }
 
+.pricing-cta-btn {
+    position: absolute;
+    left: 80%;
+    top: 88%;
+}
+
+.pricing-cta-btn img{
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+
+.pricing-cta-btn:hover {
+    transition: all 0.3s;
+    color: #12AAFB;
+    transform: scale(1.1);
+}
+
 @media (max-width: 601px) {
     .pricing-div-content {
         margin-bottom: 100px;
@@ -86,5 +105,8 @@
     .pricing-div {
         height: fit-content;
         padding-bottom: 0px;
+    }
+        .pricing-cta-btn {
+        display: none;
     }
 }

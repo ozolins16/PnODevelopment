@@ -218,25 +218,20 @@ body {
     color: rgba(255, 255, 255, 0.3);
 }
 
-#pricing-cta-btn {
+.pricing-cta-btn {
     position: absolute;
     left: 80%;
     top: 88%;
-    transition: all 0.3s;
-    border: none;
-    border-radius: 50px;
-    font-size: 30px;
-    font-family: poppins, inter;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+}
+
+.pricing-cta-btn img{
+    height: 50px;
+    width: 50px;
     cursor: pointer;
-    padding: 5px 5px;
 }
 
 
-#pricing-cta-btn:hover {
+.pricing-cta-btn:hover {
     transition: all 0.3s;
     color: #12AAFB;
     transform: scale(1.1);
@@ -514,13 +509,13 @@ body {
         width: 100%;
     }
 
-    #pricing-cta-btn {
+    .pricing-cta-btn {
         left: 80%;
         top: 84%;
     }
 
 
-    #pricing-cta-btn:hover {
+    .pricing-cta-btn:hover {
         transition: all 0.3s;
         transform: scale(1.05);
     }
@@ -572,7 +567,7 @@ body {
 }
 
 @media (max-width: 500px) {
-    #pricing-cta-btn {
+    .pricing-cta-btn {
         display: none;
     }
 }
