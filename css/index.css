@@ -322,6 +322,62 @@ footer {
     transition: all 0.3s;
 }
 
+/* ----------------------------- Message conformation ----------------------------- */
+
+
+#message-confirmation {
+    height: 15%;
+    width: 25%;
+    position: fixed; /* fixed so it doesn’t move with scrolling */
+    bottom: 10%; /* show near bottom */
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.message-confirmation-content {
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px 20px 0px 0px;
+    border-radius: 0 50px 10px  0;
+    border: solid 2px #12AAFB;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.message-confirmation-hidden {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 2s ease;
+}
+
+.message-confirmation-visible {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 2s ease;
+}
+
+
+.message-confirmation-content h2 {
+    font-size: 26px;
+    color: #0E0E0E;
+    border-bottom: solid 3px #12AAFB;
+}
+
+.message-confirmation-content p {
+    width: 70%;
+    font-size: 16px;
+    color: #0E0E0E;
+}
+
+/* ----------------------------- Media Queries ----------------------------- */
 @media (max-width: 1400px) {
     #nav-item-container {
         gap: 50px;

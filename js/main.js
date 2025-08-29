@@ -70,26 +70,72 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 // FORM SUBMISSION
-document.getElementById("contact-form").addEventListener("submit", async function(e) {
-  e.preventDefault(); // stop normal form submission
-  const form = e.target;
+// document.getElementById("contact-form").addEventListener("submit", async function(e) {
+//   e.preventDefault(); // stop normal form submission
+//   const form = e.target;
+// 
+//   const formData = new FormData(form);
+// 
+//   const response = await fetch(form.action, {
+//     method: "POST",
+//     body: formData,
+//     headers: { 'Accept': 'application/json' }
+//   });
+// 
+//   if (response.ok) {
+//     // redirect to your own page
+//     window.location.href = "http://127.0.0.1:5500/index.html?message=sent";
+//   } else {
+//     alert("There was a problem submitting the form.");
+//   }
+// });
 
-  const formData = new FormData(form);
+// === FORM HANDLING ===
+const form = document.getElementById("contact-form");
 
-  const response = await fetch(form.action, {
-    method: "POST",
-    body: formData,
-    headers: { 'Accept': 'application/json' }
+if (form) {
+  form.addEventListener("submit", async function(e) {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    const response = await fetch(form.action, {
+      method: "POST",
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (response.ok) {
+      // mark success before redirecting
+      sessionStorage.setItem("formSuccess", "true");
+      window.location.href = "http://127.0.0.1:5500/"; // main page
+    } else {
+      alert("There was a problem submitting the form.");
+    }
   });
+}
 
-  if (response.ok) {
-    // redirect to your own page
-    window.location.href = "https://pnodevelopment.com/";
-    alert("The Message was sent successfully!");
-  } else {
-    alert("There was a problem submitting the form.");
+// === POPUP HANDLING ON MAIN PAGE ===
+document.addEventListener("DOMContentLoaded", function() {
+  const confirmationBox = document.getElementById("message-confirmation");
+
+  if (sessionStorage.getItem("formSuccess") === "true") {
+    if (confirmationBox) {
+      // show it
+      confirmationBox.classList.remove("message-confirmation-hidden");
+      confirmationBox.classList.add("message-confirmation-visible");
+
+      // auto-hide after 3 seconds
+      setTimeout(() => {
+        confirmationBox.classList.remove("message-confirmation-visible");
+        confirmationBox.classList.add("message-confirmation-hidden");
+      }, 3000);
+    }
+    // clear so it doesn’t repeat on refresh
+    sessionStorage.removeItem("formSuccess");
   }
 });
+
 
 
 // PRICING OPTIONS TOGGLE
