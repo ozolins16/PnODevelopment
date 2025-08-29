@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Linara
+// Linarda
 // FORM SUBMISSION
 // document.getElementById("contact-form").addEventListener("submit", async function(e) {
 //   e.preventDefault(); // stop normal form submission
