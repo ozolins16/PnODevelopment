@@ -244,6 +244,7 @@
     #contract-options {
         margin: 0;
         gap: 20px;
+        width: 250px;
     }
 
     #contract-options:last-child {
