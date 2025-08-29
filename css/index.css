@@ -240,13 +240,6 @@ nav.scrolled {
     transition: all 0.5s ease-in-out;
 }
 
-/* NAV SCROLLING */
-
-
-
-
-
-
 
 /* Scroll-bar */
 
@@ -324,13 +317,24 @@ footer {
 
 /* ----------------------------- Message conformation ----------------------------- */
 
-
-#message-confirmation {
+#message-confirmation-success {
     height: 15%;
     width: 25%;
-    position: fixed; /* fixed so it doesn’t move with scrolling */
-    bottom: 10%; /* show near bottom */
-    left: 0px;
+    position: fixed;
+    bottom: 10%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#message-confirmation-failure {
+    height: 15%;
+    width: 25%;
+    position: fixed;
+    bottom: 10%;
+    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -345,7 +349,6 @@ footer {
     border-radius: 0 50px 10px  0;
     border: solid 2px #12AAFB;
     text-align: center;
-    color: white;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -364,7 +367,6 @@ footer {
     transition: opacity 2s ease;
 }
 
-
 .message-confirmation-content h2 {
     font-size: 26px;
     color: #0E0E0E;
@@ -376,6 +378,7 @@ footer {
     font-size: 16px;
     color: #0E0E0E;
 }
+
 
 /* ----------------------------- Media Queries ----------------------------- */
 @media (max-width: 1400px) {
