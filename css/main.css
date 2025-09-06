@@ -8,24 +8,12 @@ body {
 
 /* ----------------------------- Message conformation ----------------------------- */
 
-#message-confirmation-success {
+#message-confirmation-success, #message-confirmation-failure {
     height: 15%;
-    width: 25%;
+    width: 400px;
     position: fixed;
     bottom: 10%;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-}
-
-#message-confirmation-failure {
-    height: 15%;
-    width: 25%;
-    position: fixed;
-    bottom: 10%;
-    left: 0;
+    left: 0%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,11 +22,11 @@ body {
 
 .message-confirmation-content {
     height: 100%;
-    width: 100%;
-    background-color: #ffffff;
+    background-color: #0E0E0E;
     padding: 20px 20px 0px 0px;
-    border-radius: 0 50px 10px  0;
+    border-radius: 0 50px 50px  0;
     border: solid 2px #12AAFB;
+    border-left: none;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -61,18 +49,17 @@ body {
 
 .message-confirmation-content h2 {
     font-size: 26px;
-    color: #0E0E0E;
+    color: #fff;
 }
 
 .message-confirmation-content p {
-    width: 70%;
     font-size: 16px;
-    color: #0E0E0E;
+    color: #fff;
 }
 
 
 .message-confirmation-content-success {
-    border-color: #12AAFB;
+    border-color: #fff;
 }
 
 .message-confirmation-content-failure {
@@ -474,6 +461,19 @@ body {
 }
 
 @media (max-width: 1024px) {
+
+    #message-confirmation-success, #message-confirmation-failure {
+        width: 300px;
+    }
+
+    .message-confirmation-content p {
+        font-size: 14px;
+    }
+
+    .message-confirmation-content h2 {
+        font-size: 20px;
+    }
+
     #hero-text-container {
         width: 90%;
         height: fit-content;
@@ -500,6 +500,11 @@ body {
 }
 
 @media (max-width: 768px) {
+
+    #message-confirmation-success, #message-confirmation-failure {
+        width: 50%;
+    }
+
     #hero-container {
         padding-top: 3%;
     }
@@ -632,6 +637,18 @@ body {
 }
 
 @media (max-width: 601px) {
+
+    #message-confirmation-success, #message-confirmation-failure {
+        width: 80%;
+    }
+
+    .message-confirmation-content p {
+        font-size: 14px;
+    }
+
+    .message-confirmation-content h2 {
+        font-size: 20px;
+    }
 
     #hero-text-container {
         margin-top: 30%;
