@@ -65,7 +65,15 @@
 /* ----------------------------- PERSON SECTION -----------------------------*/
 
 .person-heading {
-    margin-top: 150px;
+    text-align: center;
+    scale: 1.3;
+    width: fit-content;
+    margin: auto;
+}
+
+.person-heading-container{
+    width: 100%;
+    margin-top: 100px;
 }
 
 #about-us-div-container {
