@@ -8,7 +8,8 @@ body {
 
 /* ----------------------------- Message conformation ----------------------------- */
 
-#message-confirmation-success, #message-confirmation-failure {
+#message-confirmation-success,
+#message-confirmation-failure {
     height: 15%;
     width: 400px;
     position: fixed;
@@ -24,7 +25,7 @@ body {
     height: 100%;
     background-color: #0E0E0E;
     padding: 20px 20px 0px 0px;
-    border-radius: 0 50px 50px  0;
+    border-radius: 0 50px 50px 0;
     border: solid 2px #12AAFB;
     border-left: none;
     text-align: center;
@@ -292,7 +293,7 @@ body {
     top: 88%;
 }
 
-.pricing-cta-btn img{
+.pricing-cta-btn img {
     height: 50px;
     width: 50px;
     cursor: pointer;
@@ -435,6 +436,21 @@ body {
     font-weight: 600;
 }
 
+.person-links {
+    scale: 0.5;
+    opacity: 0.8;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+.person-links:hover {
+    opacity: 1;
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
+
 @media (max-width: 1400px) {
 
     #hero-text-container {
@@ -462,7 +478,8 @@ body {
 
 @media (max-width: 1024px) {
 
-    #message-confirmation-success, #message-confirmation-failure {
+    #message-confirmation-success,
+    #message-confirmation-failure {
         width: 300px;
     }
 
@@ -501,7 +518,8 @@ body {
 
 @media (max-width: 768px) {
 
-    #message-confirmation-success, #message-confirmation-failure {
+    #message-confirmation-success,
+    #message-confirmation-failure {
         width: 50%;
     }
 
@@ -638,7 +656,8 @@ body {
 
 @media (max-width: 601px) {
 
-    #message-confirmation-success, #message-confirmation-failure {
+    #message-confirmation-success,
+    #message-confirmation-failure {
         width: 80%;
     }
 
