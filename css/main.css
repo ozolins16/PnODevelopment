@@ -699,6 +699,7 @@ body {
     .pricing-div {
         height: fit-content;
         padding-bottom: 0px;
+        padding-bottom: 30px;
     }
 }
 
