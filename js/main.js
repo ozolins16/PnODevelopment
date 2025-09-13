@@ -71,6 +71,34 @@ document.addEventListener('DOMContentLoaded', () => {
 // Linarda
 // FORM SUBMISSION
 // document.getElementById("contact-form").addEventListener("submit", async function(e) {
+//   e.preventDefault(); 
+//   const form = e.target;
+
+//   const formData = new FormData(form);
+
+//   const response = await fetch(form.action, {
+//     method: "POST",
+//     body: formData,
+//     headers: { 'Accept': 'application/json' }
+//   });
+
+//   if (response.ok) {
+//     const confirmation = document.getElementById("confirmation-message");
+//     confirmation.classList.add("paradit");
+
+//     // hide after 3 seconds
+//     setTimeout(() => {
+//       confirmation.classList.remove("paradit");
+//       confirmation.classList.add("paslept");
+//     }, 3000);
+
+//     form.reset(); // clear form if you want
+//   } else {
+//     alert("There was a problem submitting the form.");
+//   }
+// });
+
+// document.getElementById("contact-form").addEventListener("submit", async function(e) {
 //   e.preventDefault(); // stop normal form submission
 //   const form = e.target;
 //
@@ -205,3 +233,4 @@ document.getElementById("contact_us_option").addEventListener("change", function
   }
 }
 );
+
