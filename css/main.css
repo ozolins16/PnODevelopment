@@ -113,18 +113,18 @@ body {
     font-weight: 800;
     background: linear-gradient(to left, #12AAFB, #fff, #12AAFB);
     background-size: 200% auto;
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: shine 5s ease-in-out infinite;
 }
 
 @keyframes shine {
-  0% {
-    background-position: 100% center;
-  }
-  100% {
-    background-position: -100% center;
-  }
+    0% {
+        background-position: 100% center;
+    }
+    100% {
+        background-position: -100% center;
+    }
 }
 
 #hero-text-container p {
