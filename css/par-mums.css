@@ -1,11 +1,5 @@
 /* ----------------------------- THREE BOXES SIDE BY SIDE -----------------------------*/
 
-#hero-content-container h2 {
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-bottom: 3rem;
-}
 
 #paragraph-container {
     width: 90%;
@@ -14,6 +8,7 @@
     flex-wrap: wrap;
     gap: 50px;
     margin: 0 auto;
+    margin-top: 75px;
     padding: 0 1.5rem 4rem;
 }
 
