@@ -496,6 +496,88 @@
     cursor: pointer;
 }
 
+
+/* ----------------------------- F&Q ----------------------------- */
+
+    /* <section id="faq-container">
+        <h1 class="section-heading hidden">Biežāk uzdotie jautājumi</h1>
+        <div id="faq-div-container">
+            <details class="faq-div hidden-left">
+                <summary class="faq-question">Kāpēc izvēlēties PnO Development mājaslapu izstrādei?</summary>
+                <p class="faq-answer">Mēs piedāvājam unikālas, ar roku kodētas mājaslapas, kas ir ātras, drošas un
+                    pielāgotas jūsu biznesa vajadzībām. Mūsu komanda nodrošina personalizētu pieeju katram projektam,
+                    garantējot augstu kvalitāti un klientu apmierinātību.</p>
+                </details>
+            <details class="faq-div hidden">
+                <summary class="faq-question">Cik ilgs laiks nepieciešams mājaslapas izstrādei?</summary>
+                <p class="faq-answer">Izstrādes laiks var atšķirties atkarībā no projekta apjoma un sarežģītības. Parasti
+                    vienkāršas mājaslapas izstrāde aizņem no 2 līdz 4 nedēļām, savukārt sarežģītākiem projektiem var būt
+                    nepieciešams ilgāks laiks. Mēs vienmēr cenšamies ievērot noteiktos termiņus un informējam klientus
+                    par progresu.</p>
+            </details>
+        </div>
+    </section> */
+
+#faq-container {
+    width: 90%;
+    margin: 100px auto;
+    scroll-margin-top: 110px;
+}
+
+#faq-div-container {
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+details.faq-div {
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+    padding: 30px 40px;
+    transition: all 0.3s ease-in-out;
+}
+
+summary.faq-question {
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+summary.faq-question:hover {
+    color: #12AAFB;
+    transition: all 0.3s ease-in-out;
+}
+
+summary.faq-question::-webkit-details-marker {
+    display: none;
+}
+
+
+details.faq-div[open] summary.faq-question {
+    color: #12AAFB;
+}
+
+details.faq-div p {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #DEDEDE;
+    line-height: 150%;
+    border-left: solid 4px #12AAFB;
+    padding-left: 15px;
+    margin-left: 6.5px;
+}
+
+
+/* ----------------------------- MEDIA QUERIES  -----------------------------*/
+
+
 @media (max-width: 1400px) {
 
     #hero-text-container {
