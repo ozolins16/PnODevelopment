@@ -542,6 +542,22 @@ details.faq-div {
     transition: all 0.3s ease-in-out;
 }
 
+::details-content {
+    transition: height 0.5s ease, content-visibility 0.5s ease allow-discrete;
+    height: 0;
+    overflow: clip;
+}
+
+@supports (interpolate-size: allow-keywords) {
+    :root {
+        interpolate-size: allow-keywords;
+    }
+
+    [open]::details-content {
+        height: auto;
+    }
+}
+
 summary.faq-question {
     font-size: 24px;
     font-weight: 700;
@@ -561,10 +577,10 @@ summary.faq-question::-webkit-details-marker {
 
 details.faq-div[open] summary.faq-question {
     color: #12AAFB;
+    padding-bottom: 15px;
 }
 
 details.faq-div p {
-    margin-top: 15px;
     font-size: 18px;
     font-weight: 500;
     color: #DEDEDE;
