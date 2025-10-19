@@ -106,7 +106,7 @@
 /* sis nav vajadzigs */
 
 #hero-container {
-    height: 100vh;
+    height: 91vh;
     margin: auto;
     display: flex;
     align-items: center;
@@ -116,7 +116,7 @@
 #hero-text-container {
     width: 72%;
     margin: auto;
-    margin-top: 160px;
+    margin-top: 120px;
     text-align: center;
     display: flex;
     flex-direction: column;
