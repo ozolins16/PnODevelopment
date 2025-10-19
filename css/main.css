@@ -116,7 +116,7 @@
 #hero-text-container {
     width: 72%;
     margin: auto;
-    margin-top: 200px;
+    margin-top: 160px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -518,77 +518,7 @@
         </div>
     </section> */
 
-#faq-container {
-    width: 90%;
-    margin: 100px auto;
-    scroll-margin-top: 110px;
-}
 
-#faq-div-container {
-    width: 90%;
-    margin: 50px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
-details.faq-div {
-    width: 70%;
-    background-color: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(5px);
-    border-radius: 30px;
-    padding: 30px 40px;
-    transition: all 0.3s ease-in-out;
-}
-
-::details-content {
-    transition: height 0.5s ease, content-visibility 0.5s ease allow-discrete;
-    height: 0;
-    overflow: clip;
-}
-
-@supports (interpolate-size: allow-keywords) {
-    :root {
-        interpolate-size: allow-keywords;
-    }
-
-    [open]::details-content {
-        height: auto;
-    }
-}
-
-summary.faq-question {
-    font-size: 24px;
-    font-weight: 700;
-    cursor: pointer;
-    outline: none;
-}
-
-summary.faq-question:hover {
-    color: #12AAFB;
-    transition: all 0.3s ease-in-out;
-}
-
-summary.faq-question::-webkit-details-marker {
-    display: none;
-}
-
-
-details.faq-div[open] summary.faq-question {
-    color: #12AAFB;
-    padding-bottom: 15px;
-}
-
-details.faq-div p {
-    font-size: 18px;
-    font-weight: 500;
-    color: #DEDEDE;
-    line-height: 150%;
-    border-left: solid 4px #12AAFB;
-    padding-left: 15px;
-    margin-left: 6.5px;
-}
 
 
 /* ----------------------------- MEDIA QUERIES  -----------------------------*/
@@ -667,8 +597,9 @@ details.faq-div p {
     }
 
     #hero-container {
-        padding-top: 3%;
+        /* padding-top: 3%; */
         margin-top: 0;
+        height: 91vh;
     }
 
     #hero-text-container {
