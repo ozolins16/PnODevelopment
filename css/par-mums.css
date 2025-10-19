@@ -134,6 +134,90 @@
     font-weight: 600;
 }
 
+/* ----------------------------- PERSON SECTION -----------------------------*/
+
+#faq-container {
+    width: 100%;
+    padding: 50px 0 50px 0;
+    scroll-margin-top: 110px;
+    background-color: #0E0E0E;
+    text-align: center;
+}
+
+#faq-div-container {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+    gap: 20px;
+}
+
+#faq-container h1 {
+    margin: auto;
+    width: fit-content;
+    margin-bottom: 50px;
+    border-bottom: solid 1px #12AAFB;
+}
+
+details.faq-div {
+    width: 70%;
+    border: #fff 1px solid;
+    border-radius: 10px;
+    padding: 30px 40px;
+    transition: all 0.3s ease-in-out;
+}
+
+::details-content {
+    transition: height 0.5s ease, content-visibility 0.5s ease allow-discrete;
+    height: 0;
+    overflow: clip;
+}
+
+@supports (interpolate-size: allow-keywords) {
+    :root {
+        interpolate-size: allow-keywords;
+    }
+
+    [open]::details-content {
+        height: auto;
+    }
+}
+
+summary.faq-question {
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+summary.faq-question:hover {
+    color: #12AAFB;
+    transition: all 0.3s ease-in-out;
+}
+
+summary.faq-question::-webkit-details-marker {
+    display: none;
+}
+
+
+details.faq-div[open] summary.faq-question {
+    color: #12AAFB;
+    padding-bottom: 15px;
+}
+
+details.faq-div p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #DEDEDE;
+    line-height: 150%;
+    border-left: solid 4px #12AAFB;
+    backdrop-filter: blur(10px);
+    padding-left: 15px;
+    margin-left: 6.5px;
+}
+
 /* ----------------------------- MEDIA QUERIES -----------------------------*/
 
 @media (max-width: 1400px) {
