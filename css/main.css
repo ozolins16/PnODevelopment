@@ -668,11 +668,12 @@ details.faq-div p {
 
     #hero-container {
         padding-top: 3%;
+        margin-top: 0;
     }
 
     #hero-text-container {
         width: 90%;
-        margin-top: 20%;
+        margin-top: 0%;
     }
 /* 
     #hero-text-container h3 {
@@ -810,10 +811,6 @@ details.faq-div p {
 
     .message-confirmation-content h2 {
         font-size: 20px;
-    }
-
-    #hero-text-container {
-        margin-top: 30%;
     }
 
     .pricing-div-content {
