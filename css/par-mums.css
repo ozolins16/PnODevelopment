@@ -186,7 +186,7 @@ details.faq-div {
 }
 
 summary.faq-question {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 700;
     cursor: pointer;
     outline: none;
@@ -208,7 +208,6 @@ details.faq-div[open] summary.faq-question {
 }
 
 details.faq-div p {
-    font-size: 18px;
     font-weight: 500;
     color: #DEDEDE;
     line-height: 150%;
@@ -250,12 +249,16 @@ details.faq-div p {
 
 @media (max-width: 768px) {
 
-      .heading-main {
+    .heading-main {
     font-size: 2.2rem;
     }
 
     #hero-content-container h2 {
         font-size: 1.25rem;
+    }
+
+    .page-paragraph{
+        width: 90%;
     }
 
     #paragraph-container {
@@ -270,7 +273,18 @@ details.faq-div p {
     #about-us-div-container {
         gap: 30px;
     }
+    
+    #faq-container {
+        
+    }
 
+    #faq-container h1 {
+        font-size: 24px;
+    }
+
+    #faq-div-container {
+        width: 100%;
+    }
     
 }
 
