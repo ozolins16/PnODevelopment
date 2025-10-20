@@ -311,7 +311,7 @@
     margin-bottom: 140px;
 }
 
-.pricing-div-content span {
+.pricing-div-content div {
     width: 90%;
     display: flex;
     justify-content: baseline;
@@ -320,12 +320,12 @@
     gap: 20px;
 }
 
-.pricing-div-content span img {
+.pricing-div-content div img {
     height: 20px;
     width: 20px;
 }
 
-.pricing-div-content span p {
+.pricing-div-content div p {
     font-size: 20px;
 }
 
