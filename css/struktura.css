@@ -72,8 +72,8 @@ hr{
 .sn2{
     background-image: url("/Images/code.png");
     background-size: cover;
-    background-position: -60px -180px;
-    background-size: 600px;
+    background-position: 20px -300px;
+    background-size: 500px;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -92,8 +92,8 @@ hr{
 .sn4{
     background-image: url("/Images/laptop.jpg");
     background-size: cover;
-    background-position: -50px 70px;
-    background-size: 700px;
+    background-position: -200px -20px;
+    background-size: 1000px;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
