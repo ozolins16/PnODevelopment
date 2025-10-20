@@ -131,8 +131,11 @@ hr{
 }
 
 .structure-numbers{
-    /* color: #12a9fb62; */
+    
     font-size: 27rem;
+    /* color: #12a9fbc9; */ /*#12a9fb*/
+    /* text-shadow: #ffffff31 0px 0px 10px; */
+    font-weight: 800;
 }
 
 /* ----------------------------- Media -----------------------------*/
